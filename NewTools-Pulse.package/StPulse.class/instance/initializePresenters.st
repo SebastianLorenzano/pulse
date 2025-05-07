@@ -13,6 +13,12 @@ initializePresenters
 		addStyle: 'stSpotterSearch';
 		yourself.
 
-	resultListPresenter := self newResultList.
-	editorListPresenter := self newResultList.
+	resultListPresenter := self newResultList
+		addStyle: 'stSpotterList'; 
+		yourself.
+	editorListPresenter := self newResultList
+		addStyle: 'stSpotterList'; 
+		yourself.
 	toolListPresenter := self newResultList
+		addStyle: 'stSpotterList'; 
+		yourself.

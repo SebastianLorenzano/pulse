@@ -12,7 +12,10 @@ connectPresenters
 			action: [ self giveFocusToNextResultList ] ];
 		addShortcutWith: [ :action | action 
 			shortcutKey: KeyboardKey left asKeyCombination actionModifier;
-			action: [ self giveFocusToPreviousResultList ] ].
+			action: [ self giveFocusToPreviousResultList ] ];
+		addShortcutWith: [ :action | action 
+			shortcutKey: Character arrowUp asKeyCombination;
+			action: [ self giveFocusToResultListAtLast ] ].	
 	resultListPresenter whenActivatedDo: [ :aSelection | self acceptSelection ].
 	editorListPresenter whenActivatedDo: [ :aSelection | self acceptSelection ].
 	toolListPresenter whenActivatedDo: [ :aSelection | self acceptSelection ].
