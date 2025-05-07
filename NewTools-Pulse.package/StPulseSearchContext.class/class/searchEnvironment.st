@@ -1,0 +1,4 @@
+private
+searchEnvironment
+
+	^ StPulseSearchEnvironmentContext new

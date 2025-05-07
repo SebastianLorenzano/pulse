@@ -1,0 +1,4 @@
+*NewTools-Pulse
+categoryLabel
+
+	^ 'package'

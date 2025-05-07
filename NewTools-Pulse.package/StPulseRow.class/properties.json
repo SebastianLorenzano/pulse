@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SpEasyAbstractRowPresenter",
+	"category" : "NewTools-Pulse",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"iconPresenter",
+		"namePresenter",
+		"contextPresenter"
+	],
+	"name" : "StPulseRow",
+	"type" : "normal"
+}

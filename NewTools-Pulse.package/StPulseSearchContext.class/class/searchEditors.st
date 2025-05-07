@@ -1,0 +1,4 @@
+accessing
+searchEditors
+
+	^ StPulseSearchWindowsContext new

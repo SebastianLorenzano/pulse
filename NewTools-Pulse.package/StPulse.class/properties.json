@@ -1,0 +1,27 @@
+{
+	"classtraitcomposition" : "SpTModel classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"searchPresenter",
+		"resultListPresenter",
+		"emptyPresenter",
+		"editorListPresenter",
+		"toolListPresenter",
+		"activePresenter",
+		"tabLayout",
+		"windowsContext",
+		"toolsContext",
+		"environmentContext",
+		"worker"
+	],
+	"name" : "StPulse",
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"traitcomposition" : "SpTModel",
+	"type" : "normal",
+	"classinstvars" : [
+		"pulse"
+	],
+	"pools" : [ ],
+	"category" : "NewTools-Pulse"
+}

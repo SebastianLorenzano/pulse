@@ -1,0 +1,4 @@
+initialization
+updateSearchPlaceHolder
+	
+	searchPresenter placeholder: self selectedContext searchPlaceholder

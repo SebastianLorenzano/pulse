@@ -1,0 +1,4 @@
+accessing
+searchPlaceholder
+
+	^ self subclassResponsibility

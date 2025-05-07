@@ -1,0 +1,4 @@
+private
+giveFocusToResultList
+
+	activePresenter takeKeyboardFocus

@@ -1,0 +1,4 @@
+accessing
+associatedProcessors
+
+	^ { StWorldMenuProcessor }

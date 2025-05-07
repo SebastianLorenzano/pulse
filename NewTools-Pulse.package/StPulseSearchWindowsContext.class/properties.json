@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "StPulseSearchContext",
+	"category" : "NewTools-Pulse",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StPulseSearchWindowsContext",
+	"type" : "normal"
+}
