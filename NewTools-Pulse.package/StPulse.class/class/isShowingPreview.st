@@ -1,0 +1,4 @@
+testing
+isShowingPreview
+
+	^ PreviewVisible

@@ -1,6 +1,8 @@
 {
 	"classtraitcomposition" : "SpTModel classTrait",
-	"classvars" : [ ],
+	"classvars" : [
+		"PreviewVisible"
+	],
 	"instvars" : [
 		"searchPresenter",
 		"resultListPresenter",
@@ -12,7 +14,8 @@
 		"windowsContext",
 		"toolsContext",
 		"environmentContext",
-		"worker"
+		"worker",
+		"previewContainer"
 	],
 	"name" : "StPulse",
 	"commentStamp" : "",
