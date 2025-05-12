@@ -3,9 +3,12 @@ addPreviewPanelTo: contentsLayout
 
 	contentsLayout 	add: (previewContainer := SpBoxLayout newTopToBottom).
 	resultListPresenter whenSelectionChangedDo: [ :selection | 
-		self showPreview: selection selectedItem ].
+		activePresenter = resultListPresenter
+			ifTrue: [ self showPreview: selection selectedItem ] ].
 	editorListPresenter whenSelectionChangedDo: [ :selection | 
-		self showPreview: selection selectedItem ].
+		activePresenter = editorListPresenter
+			ifTrue: [ self showPreview: selection selectedItem ] ].
 	toolListPresenter whenSelectionChangedDo: [ :selection | 
-		self showPreview: selection selectedItem ]
+		activePresenter = toolListPresenter
+			ifTrue: [ self showPreview: selection selectedItem ] ].
 	

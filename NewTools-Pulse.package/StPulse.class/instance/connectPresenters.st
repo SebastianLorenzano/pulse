@@ -16,9 +16,6 @@ connectPresenters
 		addShortcutWith: [ :action | action 
 			shortcutKey: Character arrowUp asKeyCombination;
 			action: [ self giveFocusToResultListAtLast ] ].	
-	resultListPresenter whenActivatedDo: [ :aSelection | self acceptSelection ].
-	editorListPresenter whenActivatedDo: [ :aSelection | self acceptSelection ].
-	toolListPresenter whenActivatedDo: [ :aSelection | self acceptSelection ].
 	self addKeyboardBehavior: resultListPresenter.
 	self addKeyboardBehavior: editorListPresenter.
 	self addKeyboardBehavior: toolListPresenter.

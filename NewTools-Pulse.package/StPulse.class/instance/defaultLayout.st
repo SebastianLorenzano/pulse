@@ -6,7 +6,6 @@ defaultLayout
 	result := SpBoxLayout newVertical
 		add: searchPresenter expand: false;
 		add: (SpOverlayLayout new 
-			"child: resultListPresenter;"
 			child: ((contentsLayout := SpBoxLayout newLeftToRight)
 				add: ((tabLayout := SpTabLayout new) 
 					add: resultListPresenter label: 'Environment';

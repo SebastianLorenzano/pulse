@@ -21,6 +21,4 @@ initializePresenters
 		yourself.
 	toolListPresenter := self newResultList
 		addStyle: 'stSpotterList'; 
-		yourself.
-		
-	activePresenter := resultListPresenter
+		yourself

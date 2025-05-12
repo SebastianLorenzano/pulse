@@ -5,5 +5,7 @@ tabActivated: aPresenter
 	
 	activePresenter := aPresenter.
 	activePresenter ifNotNil: [
+		
+		previewContainer ifNotNil: [ previewContainer removeAll ].
 		self updateSearchPlaceHolder.
 		self doSearch: searchPresenter text ]
