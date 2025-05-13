@@ -1,4 +1,4 @@
-initialization
+private - accessing
 newResultList
 
 	^ self newEasyListView
