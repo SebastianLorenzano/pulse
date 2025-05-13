@@ -1,4 +1,4 @@
-initialization
+private - actions
 updateResultListWith: aCollection
 	
 	"use defer to ensure UI loop"

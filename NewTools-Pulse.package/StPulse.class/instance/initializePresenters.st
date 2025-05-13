@@ -21,5 +21,9 @@ initializePresenters
 		yourself.
 	toolListPresenter := self newResultList
 		addStyle: 'stSpotterList'; 
-		yourself
+		yourself.
+		
+	helpButton := self newButton
+		label: 'Help';
+		action: [ self showPopover: SpPopoverPosition left relativeTo: helpButton ]
 	
