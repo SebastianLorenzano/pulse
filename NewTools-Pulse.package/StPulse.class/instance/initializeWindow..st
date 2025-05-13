@@ -7,4 +7,6 @@ initializeWindow: aWindowPresenter
 		whenClosedDo: [ 
 			self windowClosed.
 			self class windowClosed ];
-		centered
+		centered.
+		
+	self addProcessors: aWindowPresenter
