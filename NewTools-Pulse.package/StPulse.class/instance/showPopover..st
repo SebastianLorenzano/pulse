@@ -6,7 +6,7 @@ showPopover: aPresenter
 		relativeTo: aPresenter ;
 		bePositionTop ;
 		presenter: (SpPresenter new
-			addStyle: 'pulseHelp';
+			addStyle: 'stPulseHelp';
 			layout: (SpGridLayout new
 				beColumnNotHomogeneous ;
 				column: 2 expand: false ;

@@ -1,26 +1,24 @@
 initialization
 initializePresenters
 
-	self addStyle: 'stSpotter'.
-	self addStyle: 'dockSpotter'.
-
+	self addStyle: 'stPulse'.
+	
 	emptyPresenter := self newLabel 
-		addStyle: 'dim';
 		label: 'No results yet...';
 		yourself.
 
 	searchPresenter := self newSearchInput
-		addStyle: 'stSpotterSearch';
+		addStyle: 'stPulseSearch';
 		yourself.
 
 	resultListPresenter := self newResultList
-		addStyle: 'stSpotterList'; 
+		addStyle: 'stPulseList'
 		yourself.
 	editorListPresenter := self newResultList
-		addStyle: 'stSpotterList'; 
+		addStyle: 'stPulseList'; 
 		yourself.
 	toolListPresenter := self newResultList
-		addStyle: 'stSpotterList'; 
+		addStyle: 'stPulseList'; 
 		yourself.
 		
 	helpButton := self newButton

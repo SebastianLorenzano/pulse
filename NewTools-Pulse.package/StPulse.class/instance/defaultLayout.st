@@ -10,11 +10,14 @@ defaultLayout
 					new
 					addOverlay: emptyPresenter withConstraints: [ :c | c vAlignCenter; hAlignCenter ] ;
 					yourself ;
-					child: ((tabLayout := SpTabLayout new) 
-						add: resultListPresenter label: 'Environment';
-						add: editorListPresenter label: 'Windows';
-						add: toolListPresenter label: 'Commands';
-						whenTabSelectedDo: [ :ann | self tabActivated: ann presenter ] ;
+					child: (self newPresenter 
+						addStyle: 'stPulseList' ;
+						layout: ((tabLayout := SpTabLayout new) 
+							add: resultListPresenter label: 'Environment';
+							add: editorListPresenter label: 'Windows';
+							add: toolListPresenter label: 'Commands';
+							whenTabSelectedDo: [ :ann | self tabActivated: ann presenter ] ;
+							yourself)
 						yourself)
 					yourself)
 				yourself).
