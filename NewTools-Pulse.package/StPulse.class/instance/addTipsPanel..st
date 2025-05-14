@@ -4,13 +4,11 @@ addTipsPanel: aLayout
 	^ (SpBoxLayout newTopToBottom
 		add: aLayout ;
 		add: (SpBoxLayout newLeftToRight
-			vAlignCenter ;
-			addLast: (SpBoxLayout newLeftToRight
-				vAlign: SpLayoutWidgetAlignment 
-					end ;
+				vAlignCenter ;
+				addLast: (SpBoxLayout newLeftToRight
+					vAlignEnd ;
 					add: helpButton expand: false;
 					yourself)
-			 	
-			 	yourself)
+				 yourself)
 			expand: false ;
-			yourself)
+		yourself)

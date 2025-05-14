@@ -25,5 +25,5 @@ initializePresenters
 		
 	helpButton := self newButton
 		label: 'Help';
-		action: [ self showPopover: SpPopoverPosition left relativeTo: helpButton ]
+		action: [ self showPopover: helpButton ]
 	

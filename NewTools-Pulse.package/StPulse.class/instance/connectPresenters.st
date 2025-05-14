@@ -18,6 +18,4 @@ connectPresenters
 			action: [ self giveFocusToResultListAtLast ] ].	
 	self addKeyboardBehavior: resultListPresenter.
 	self addKeyboardBehavior: editorListPresenter.
-	self addKeyboardBehavior: toolListPresenter.
-	
-	
+	self addKeyboardBehavior: toolListPresenter

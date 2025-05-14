@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "StPharoStyleContributor",
+	"category" : "NewTools-Pulse",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StPulseStyleContributor",
+	"type" : "normal"
+}
