@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "NewTools-Pulse",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"entries"
+	],
+	"name" : "StPulseWeakHistoryCollection",
+	"type" : "normal"
+}
