@@ -1,6 +1,8 @@
 private - actions
 doSearch: aString
 	
+	self owner 
+		ifNil: [ ^ self ].
 	"clean all possible pending tasks (this is *a bit* better, but still annoying :("
 	worker purge.
 	worker isBusy ifTrue: [ 

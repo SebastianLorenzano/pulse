@@ -11,15 +11,9 @@ initializePresenters
 		addStyle: 'stPulseSearch';
 		yourself.
 
-	resultListPresenter := self newResultList
-		addStyle: 'stPulseList'
-		yourself.
-	editorListPresenter := self newResultList
-		addStyle: 'stPulseList'; 
-		yourself.
-	toolListPresenter := self newResultList
-		addStyle: 'stPulseList'; 
-		yourself.
+	resultListPresenter := self newResultList.
+	editorListPresenter := self newResultList.
+	toolListPresenter := self newResultList.
 		
 	helpButton := self newButton
 		label: 'Help';

@@ -12,11 +12,8 @@ styleSheetContribution
 		Geometry { #minHeight: 35, #vResizing: false },
 		Text { #drawKeyboardFocus: false } ],
 	.stPulseList [
-		Container { #borderWidth: 5, #borderColor: #blue },
-		Draw { #color: #transparent } ],
-	.stPulseTab [
-		Container { #borderWidth: 7, #borderColor: #red },
-		Draw { #color: #transparent } ],
+		Container { #borderWidth: 0 },
+		Draw { #color: EnvironmentColor(#background) } ],	
 	.stPulsePreview [ 
 		Draw { #color: #transparent } ],
 	.stPulseHelp [  

@@ -1,8 +1,7 @@
 private - accessing
 newResultList
-
+	
 	^ self newEasyListView
-		addStyle: 'stList';
-		addStyle: 'stSpotterSearch';
-		rowPresenterClass: StPulseRow;
+		addStyle: 'stPulseList' ;
+		rowPresenterClass: StPulseRow
 		yourself
