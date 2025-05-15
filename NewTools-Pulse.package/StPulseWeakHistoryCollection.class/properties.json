@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"entries"
+		"entries",
+		"maxEntries"
 	],
 	"name" : "StPulseWeakHistoryCollection",
 	"type" : "normal"
