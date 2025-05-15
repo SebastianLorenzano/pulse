@@ -1,6 +1,7 @@
 {
 	"classtraitcomposition" : "SpTModel classTrait",
 	"classvars" : [
+		"History",
 		"PreviewVisible"
 	],
 	"instvars" : [

@@ -1,5 +1,5 @@
-testing
-createTips
+private
+tips
 
 	^ {
 		'<meta+b>'  -> 'filters for Classes' .
