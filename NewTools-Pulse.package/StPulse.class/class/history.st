@@ -1,4 +1,5 @@
 accessing
 history
 
-	^ self basicHistory reject: [ :each | each isNil ]
+	^ History ifNil: [ 
+		History := StPulseWeakHistoryCollection new ]
