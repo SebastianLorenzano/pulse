@@ -1,4 +1,4 @@
-private - actions
+accessing
 clean
 
 	entries ifNil: [ ^ self ]. 

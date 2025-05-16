@@ -3,4 +3,6 @@ acceptSelection
 
 	self withWindowDo: [ :aWindow | aWindow close ].
 	activePresenter selectedItem 
-		ifNotNil: [ :anEntry | anEntry accept: self ]
+		ifNotNil: [ :anEntry | 
+			self historize: anEntry.
+			anEntry accept: self ]
