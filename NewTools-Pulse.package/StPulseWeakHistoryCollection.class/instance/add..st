@@ -1,5 +1,6 @@
 accessing
 add: aStEntry
-"Should add a new entry to the very start"
 
-	aStEntry addToHistory: self
+	self entries size < self maxEntries
+		ifFalse: [ entries removeLast ].
+	entries addFirst: aStEntry

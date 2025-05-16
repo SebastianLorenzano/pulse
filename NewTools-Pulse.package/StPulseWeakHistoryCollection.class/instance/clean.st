@@ -1,5 +1,5 @@
 private - actions
 clean
 
-	self cleanEnvironmentEntries.
-	self cleanMenuEntries.
+	entries ifNil: [ ^ self ]. 
+	entries := entries select: [ :each | each isNotNil ]
