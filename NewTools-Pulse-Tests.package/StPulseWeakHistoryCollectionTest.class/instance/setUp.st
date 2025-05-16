@@ -2,5 +2,5 @@ running
 setUp
 
 	super setUp.
-	collection := StPulseWeakHistoryCollection new
+	collection := StPulseWeakHistoryCollection new: 25.
 	

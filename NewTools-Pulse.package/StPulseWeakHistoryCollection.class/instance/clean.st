@@ -1,4 +1,5 @@
-private - accessing
+private - actions
 clean
 
-	history := history select: [ :each | each isNotNil ]
+	self cleanEnvironmentEntries.
+	self cleanMenuEntries.
