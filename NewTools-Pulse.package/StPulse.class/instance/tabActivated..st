@@ -1,4 +1,4 @@
-private
+private - actions
 tabActivated: aPresenter
 	
 	activePresenter = aPresenter ifTrue: [ ^ self ].

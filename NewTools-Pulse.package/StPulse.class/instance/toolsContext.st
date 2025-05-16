@@ -1,4 +1,4 @@
-private
+private - accessing
 toolsContext
 
 	^ toolsContext ifNil: [ 

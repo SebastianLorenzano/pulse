@@ -1,4 +1,4 @@
-private
+private - accessing
 environmentContext
 
 	^ environmentContext ifNil: [ 

@@ -1,5 +1,5 @@
-private
-transferFocusToSearchTextArrowUp
+private - actions
+giveFocusToSearchTextArrowUp
 
 	| index |
 
@@ -8,6 +8,6 @@ transferFocusToSearchTextArrowUp
 		^ self ].
 
 	index := activePresenter selectedIndex.
-	index  = 1
+	index = 1
 		ifTrue: [ searchPresenter takeKeyboardFocus ]
 		ifFalse: [ activePresenter selectIndex: index - 1 scrollToSelection: true ]

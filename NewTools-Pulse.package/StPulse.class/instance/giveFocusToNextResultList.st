@@ -1,4 +1,4 @@
-private
+private - actions
 giveFocusToNextResultList
 	| nextPresenter |
 

@@ -1,4 +1,4 @@
-private
+private - accessing
 selectedContext
 
 	activePresenter = editorListPresenter ifTrue: [ ^ self windowsContext ].

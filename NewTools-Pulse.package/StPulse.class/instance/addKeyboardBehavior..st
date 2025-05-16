@@ -5,7 +5,7 @@ addKeyboardBehavior: aPresenter
 	aPresenter 
 		addShortcutWith: [ :action | action 
 			shortcutKey: Character arrowUp asKeyCombination;
-			action: [ self transferFocusToSearchTextArrowUp ] ];
+			action: [ self giveFocusToSearchTextArrowUp ] ];
 		addShortcutWith: [ :action | action 
 			shortcutKey: Character arrowDown asKeyCombination;
 			action: [ self transferFocusToSearchTextArrowDown ] ];
