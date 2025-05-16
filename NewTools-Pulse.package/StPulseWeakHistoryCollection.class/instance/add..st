@@ -1,11 +1,8 @@
 accessing
 add: aStEntry
 "Should add a new entry to the very start"
-"Something like:
 
-entries select: [ :each | each ifNotNil ] size < maxEntries
-		ifFalse: [ entries removeLast ].
-		
-	entries addFirst: aStEntry.
+	(self history size) < self maxEntries
+		ifFalse: [ history removeLast ].
+	history addFirst: aStEntry.
 	self clean
-"

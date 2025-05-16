@@ -1,5 +1,4 @@
-accessing
+private - accessing
 clean
-"Should remove any nil from the list"
 
-"select: [ :each | each ifNotNil ]"
+	history := history select: [ :each | each isNotNil ]
