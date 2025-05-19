@@ -2,7 +2,7 @@ accessing
 entries 
 
 	^ entries 
-		ifNil: [ entries := WeakOrderedCollection new: 0]
+		ifNil: [ entries := OrderedCollection new]
 		ifNotNil: [ 
 			self clean. 
 			entries ]

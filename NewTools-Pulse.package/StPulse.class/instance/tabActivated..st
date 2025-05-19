@@ -9,7 +9,7 @@ tabActivated: aPresenter
 		self updateSearchPlaceHolder.
 
 		(searchPresenter text isEmpty and: [ activePresenter = resultListPresenter ])
-			ifTrue: [ self updateResultListWith: self history ]
+			ifTrue: [ self updateResultListWith: self historyEntries ]
 			ifFalse: [ 
 					activePresenter contentView items isEmpty
 						ifTrue: [ emptyPresenter visible: true ].

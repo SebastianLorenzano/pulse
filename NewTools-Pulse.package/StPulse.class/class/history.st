@@ -2,4 +2,4 @@ accessing
 history
 
 	^ History ifNil: [ 
-		History := StPulseWeakHistoryCollection new ]
+		History := StPulseHistoryCollection new ]

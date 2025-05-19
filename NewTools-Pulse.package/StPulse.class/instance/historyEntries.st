@@ -1,4 +1,4 @@
 private - accessing
-history
+historyEntries
 
 	^ History entries

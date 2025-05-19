@@ -1,0 +1,4 @@
+*NewTools-Pulse
+asHistoryEntry
+
+	^ self

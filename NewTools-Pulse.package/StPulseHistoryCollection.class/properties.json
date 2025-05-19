@@ -9,6 +9,6 @@
 		"maxEntries",
 		"entries"
 	],
-	"name" : "StPulseWeakHistoryCollection",
+	"name" : "StPulseHistoryCollection",
 	"type" : "normal"
 }
