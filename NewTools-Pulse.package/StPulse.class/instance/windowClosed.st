@@ -1,4 +1,4 @@
-private
+private - accessing
 windowClosed
 
 	worker stop

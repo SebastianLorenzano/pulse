@@ -8,7 +8,7 @@ addKeyboardBehavior: aPresenter
 			action: [ self giveFocusToSearchTextArrowUp ] ];
 		addShortcutWith: [ :action | action 
 			shortcutKey: Character arrowDown asKeyCombination;
-			action: [ self transferFocusToSearchTextArrowDown ] ];
+			action: [ self giveFocusToSearchTextArrowDown ] ];
 		addShortcutWith: [ :action | action 
 			shortcutKey: Character arrowLeft asKeyCombination;
 			action: [ self giveFocusToPreviousResultList ] ];

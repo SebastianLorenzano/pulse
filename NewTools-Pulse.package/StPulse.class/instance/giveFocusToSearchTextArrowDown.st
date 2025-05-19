@@ -1,5 +1,5 @@
-private
-transferFocusToSearchTextArrowDown
+private - actions
+giveFocusToSearchTextArrowDown
 
 	| index first |
 	
