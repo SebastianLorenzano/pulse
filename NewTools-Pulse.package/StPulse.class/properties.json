@@ -20,7 +20,9 @@
 		"previewContainer",
 		"helpButton",
 		"popover",
-		"keepServiceAliveStep"
+		"keepServiceAliveStep",
+		"service",
+		"waitingSearchText"
 	],
 	"name" : "StPulse",
 	"commentStamp" : "2025-05-13 14:54",
