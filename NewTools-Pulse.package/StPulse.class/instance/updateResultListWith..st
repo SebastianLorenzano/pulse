@@ -1,13 +1,18 @@
 private - updating
 updateResultListWith: aCollection
 
-	| list |
-	list := (aCollection isEmpty and: [ searchPresenter text isEmpty ])
-		        ifTrue: [ self historyEntries ]
-		        ifFalse: [ aCollection ].
-	emptyPresenter visible: list isEmpty.
 	"use defer to ensure UI loop"
-	self application defer: [
+	self updateWorker schedule: [ 
+		self application defer: [
+			| list |
+			list := (
+				aCollection isEmpty 
+				and: [ searchPresenter text isEmpty 
+				and: activePresenter = resultListPresenter ] )
+		  	 		ifTrue: [ self historyEntries ]
+					ifFalse: [ aCollection ].
+
+			emptyPresenter visible: list isEmpty.
 			activePresenter updateItemsKeepingSelection: list.
 			(activePresenter selectedItem isNil and: [ list isNotEmpty ])
-				ifTrue: [ resultListPresenter selectFirst ] ]
+				ifTrue: [ resultListPresenter selectFirst ] ] ]

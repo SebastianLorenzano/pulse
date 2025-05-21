@@ -2,7 +2,7 @@ initialization
 connectPresenters
 
 	searchPresenter 
-		whenTextChangedDo: [ :aString | self doSearch: aString ];
+		"whenTextChangedDo: [ :aString | self waitingSearchText: aString ];"
 		whenSubmitDo: [ :aString | self acceptSelection ];
 		addShortcutWith: [ :action | action 
 			shortcutKey: KeyboardKey down asKeyCombination;

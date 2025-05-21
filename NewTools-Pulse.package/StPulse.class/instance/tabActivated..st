@@ -1,4 +1,4 @@
-private - actions
+private
 tabActivated: aPresenter
 	
 	(activePresenter = aPresenter or: [ aPresenter isNil ]) 
@@ -7,9 +7,7 @@ tabActivated: aPresenter
 	activePresenter := aPresenter.
 	previewContainer ifNotNil: [ previewContainer removeAll ].
 	self updateSearchPlaceHolder.
-
 	(searchPresenter text isEmpty and: [ activePresenter = resultListPresenter ])
 		ifTrue: [ self updateResultListWith: self historyEntries ]
-		ifFalse: [ 
-			emptyPresenter visible: activePresenter contentView items isEmpty.
-			self doSearch: searchPresenter text ] 
+		ifFalse: [ emptyPresenter visible: activePresenter contentView items isEmpty ]
+		

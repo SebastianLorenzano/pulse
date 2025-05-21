@@ -1,4 +1,7 @@
 private - accessing
 windowClosed
 
-	worker stop
+	service stop.
+	updateWorker stop.
+	searchWorker stop.
+	self ensurePulseService stop

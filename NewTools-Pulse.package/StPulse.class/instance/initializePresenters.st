@@ -16,7 +16,8 @@ initializePresenters
 	editorListPresenter := self newResultList.
 	toolListPresenter := self newResultList.
 		
-	helpButton := self newButton
-		label: 'Help';
-		action: [ self showPopover: helpButton ]
+    helpButton := self newButton
+        addStyle: 'small';
+        icon: (self iconNamed: #help);
+        action: [ self showPopover: helpButton ]
 	
