@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "StEntry",
+	"category" : "NewTools-Pulse-Entries",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contentString"
+	],
+	"name" : "StHistoryEntry",
+	"type" : "normal"
+}

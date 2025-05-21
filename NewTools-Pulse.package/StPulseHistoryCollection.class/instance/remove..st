@@ -2,5 +2,5 @@ accessing
 remove: aStEntry
 
 	entries removeAllSuchThat: [ :each | 
-		each entry = aStEntry entry 
-		or: [ each entry content isNil ] ]
+		each contentString = aStEntry contentString 
+		or: [ each contentString isNil ] ]
