@@ -1,0 +1,1 @@
+I wrap a Window, to modify its behavior if required for the spotter

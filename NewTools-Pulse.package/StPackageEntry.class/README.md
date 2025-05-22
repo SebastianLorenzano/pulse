@@ -1,0 +1,1 @@
+I wrap a RPackage entry, to modify its behavior if required for the class

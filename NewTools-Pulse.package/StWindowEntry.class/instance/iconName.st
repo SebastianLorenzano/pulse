@@ -1,0 +1,4 @@
+accessing
+iconName
+	
+	^ content systemIconName

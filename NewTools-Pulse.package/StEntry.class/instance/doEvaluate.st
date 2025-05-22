@@ -1,0 +1,4 @@
+evaluating
+doEvaluate 
+
+	self subclassResponsibility 

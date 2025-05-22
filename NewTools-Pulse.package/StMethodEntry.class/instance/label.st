@@ -1,0 +1,4 @@
+accessing
+label
+
+	^ content printString
