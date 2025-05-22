@@ -1,4 +1,4 @@
-as yet unclassified
+converting
 asHistoryEntry 
 
 	^ StHistoryClassEntry new: self
