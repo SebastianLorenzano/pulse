@@ -8,11 +8,11 @@ updateResultListWith: aCollection
 			list := (
 				aCollection isEmpty 
 				and: [ searchPresenter text isEmpty 
-				and: activePresenter = resultListPresenter ] )
+				and: activePresenter = environmentListPresenter ] )
 		  	 		ifTrue: [ self historyEntries ]
 					ifFalse: [ aCollection ].
 
 			emptyPresenter visible: list isEmpty.
 			activePresenter updateItemsKeepingSelection: list.
 			(activePresenter selectedItem isNil and: [ list isNotEmpty ])
-				ifTrue: [ resultListPresenter selectFirst ] ] ]
+				ifTrue: [ environmentListPresenter selectFirst ] ] ]

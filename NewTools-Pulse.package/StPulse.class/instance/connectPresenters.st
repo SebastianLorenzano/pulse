@@ -2,7 +2,6 @@ initialization
 connectPresenters
 
 	searchPresenter 
-		"whenTextChangedDo: [ :aString | self waitingSearchText: aString ];"
 		whenSubmitDo: [ :aString | self acceptSelection ];
 		addShortcutWith: [ :action | action 
 			shortcutKey: KeyboardKey down asKeyCombination;
@@ -16,6 +15,6 @@ connectPresenters
 		addShortcutWith: [ :action | action 
 			shortcutKey: Character arrowUp asKeyCombination;
 			action: [ self giveFocusToResultListAtLast ] ].	
-	self addKeyboardBehavior: resultListPresenter.
+	self addKeyboardBehavior: environmentListPresenter.
 	self addKeyboardBehavior: editorListPresenter.
 	self addKeyboardBehavior: toolListPresenter

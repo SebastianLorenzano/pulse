@@ -5,6 +5,7 @@ acceptSelection
 	activePresenter selectedItem 
 		ifNotNil: [ :anEntry | 
 			| historyEntry |
-			historyEntry := anEntry asHistoryEntry.
-			self historize: historyEntry.
-			historyEntry accept: self ]
+			
+			(historyEntry := anEntry asHistoryEntry)
+				ifNotNil: [ self historize: historyEntry ].
+			anEntry accept: self ]

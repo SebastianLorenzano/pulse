@@ -9,5 +9,4 @@ doSearch: aString
 		candidates := self model 
 			candidatesFor: aString 
 			inContext: self selectedContext.
-
 		self updateResultListWith: candidates ] 

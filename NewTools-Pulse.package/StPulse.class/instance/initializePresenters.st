@@ -12,7 +12,7 @@ initializePresenters
 		addStyle: 'stPulseSearch';
 		yourself.
 
-	resultListPresenter := self newResultList.
+	environmentListPresenter := self newResultList.
 	editorListPresenter := self newResultList.
 	toolListPresenter := self newResultList.
 		

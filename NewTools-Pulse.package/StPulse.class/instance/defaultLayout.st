@@ -13,7 +13,7 @@ defaultLayout
                         child: (self newPresenter 
                             addStyle: 'stPulseList' ;
                             layout: ((tabLayout := SpTabLayout new) 
-                                add: resultListPresenter label: 'Environment';
+                                add: environmentListPresenter label: 'Environment';
                                 add: editorListPresenter label: 'Windows';
                                 add: toolListPresenter label: 'Commands';
                                 whenTabSelectedDo: [ :ann | self tabActivated: ann presenter ] ;
