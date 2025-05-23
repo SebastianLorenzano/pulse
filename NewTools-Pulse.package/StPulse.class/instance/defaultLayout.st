@@ -12,7 +12,7 @@ defaultLayout
                         yourself ;
                         child: (self newPresenter
                             addStyle: 'stPulseList' ;
-                            layout: (listLayout := SpBoxLayout newTopToBottom
+                            layout: ((listLayout := SpBoxLayout newTopToBottom)
 											add: (SpBoxLayout newLeftToRight 
 												hAlignCenter;
 												add: listLabel ;

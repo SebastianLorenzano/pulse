@@ -3,5 +3,6 @@ newResultList
 	
 	^ self newEasyListView
 		addStyle: 'stPulseList' ;
-		rowPresenterClass: StPulseRow
+		rowPresenterClass: StPulseRow ;
+		headerTitle: 'Environment'
 		yourself
