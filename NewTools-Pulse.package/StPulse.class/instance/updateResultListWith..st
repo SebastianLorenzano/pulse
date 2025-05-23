@@ -15,4 +15,4 @@ updateResultListWith: aCollection
 			emptyPresenter visible: list isEmpty.
 			activePresenter updateItemsKeepingSelection: list.
 			(activePresenter selectedItem isNil and: [ list isNotEmpty ])
-				ifTrue: [ environmentListPresenter selectFirst ] ] ]
+				ifTrue: [ activePresenter selectFirst ] ] ]

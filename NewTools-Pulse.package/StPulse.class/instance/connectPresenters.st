@@ -14,7 +14,17 @@ connectPresenters
 			action: [ self giveFocusToPreviousResultList ] ];
 		addShortcutWith: [ :action | action 
 			shortcutKey: Character arrowUp asKeyCombination;
-			action: [ self giveFocusToResultListAtLast ] ].	
+			action: [ self giveFocusToResultListAtLast ] ] ;
+		takeKeyboardFocus.
 	self addKeyboardBehavior: environmentListPresenter.
 	self addKeyboardBehavior: editorListPresenter.
-	self addKeyboardBehavior: toolListPresenter
+	self addKeyboardBehavior: toolListPresenter.
+	
+	self addToMillerList: environmentListPresenter.
+	self addToMillerList: editorListPresenter.
+	self addToMillerList: toolListPresenter.
+	paginator 
+		whenSelectedPageChangedDo: [ :newValue | 
+			activePresenter := paginator pages at: newValue. 
+			self updateListLabel ] ;
+		selectPage: (self class tabIndexToOpenAtStart)

@@ -10,18 +10,26 @@ defaultLayout
                     add: (SpOverlayLayout new
                         addOverlay: emptyPresenter withConstraints: [ :c | c vAlignCenter; hAlignCenter ] ;
                         yourself ;
-                        child: (self newPresenter 
+                        child: (self newPresenter
                             addStyle: 'stPulseList' ;
-                            layout: ((tabLayout := SpTabLayout new) 
-                                add: environmentListPresenter label: 'Environment';
-                                add: editorListPresenter label: 'Windows';
-                                add: toolListPresenter label: 'Commands';
-                                whenTabSelectedDo: [ :ann | self tabActivated: ann presenter ] ;
-                                yourself)
+                            layout: (SpBoxLayout newTopToBottom
+											add: (SpBoxLayout newLeftToRight 
+												hAlignCenter;
+												add: listLabel ;
+												yourself) 
+											expand: false ;
+											add: millerList expand: true;
+										yourself)
                             yourself)
                         yourself)
                     yourself);
                 addOverlay: helpButton withConstraints: [ :c | c vAlignEnd; hAlignEnd ];
-                yourself).
+                yourself) ;
+			add: (SpBoxLayout newLeftToRight 
+				hAlignCenter;
+				add: paginator;
+				yourself) 
+			expand: false ;
+			yourself.
     self isShowingPreview ifTrue: [ self addPreviewPanelTo: contentsLayout ].
     ^ result

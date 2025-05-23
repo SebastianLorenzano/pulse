@@ -1,10 +1,9 @@
 private - actions
 giveFocusToNextResultList
+
 	| nextPresenter |
+	nextPresenter := paginator pages last = activePresenter 
+		ifTrue: [ paginator selectPage: 1 ]
+		ifFalse: [ paginator selectPage: (paginator pages indexOf: activePresenter) + 1 ].
 
-	nextPresenter := tabLayout children last = activePresenter 
-		ifTrue: [ tabLayout children first ]
-		ifFalse: [ tabLayout children after: activePresenter ].
-
-	tabLayout select: nextPresenter.
-	activePresenter takeKeyboardFocus
+	millerList takeKeyboardFocus

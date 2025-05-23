@@ -2,8 +2,7 @@
 	"classtraitcomposition" : "SpTModel classTrait",
 	"classvars" : [
 		"History",
-		"PreviewVisible",
-		"UniqueInstance"
+		"PreviewVisible"
 	],
 	"instvars" : [
 		"searchPresenter",
@@ -11,7 +10,6 @@
 		"editorListPresenter",
 		"toolListPresenter",
 		"activePresenter",
-		"tabLayout",
 		"windowsContext",
 		"toolsContext",
 		"environmentContext",
@@ -23,7 +21,10 @@
 		"updateWorker",
 		"waitingSearchText",
 		"lastSearchText",
-		"environmentListPresenter"
+		"environmentListPresenter",
+		"millerList",
+		"paginator",
+		"listLabel"
 	],
 	"name" : "StPulse",
 	"commentStamp" : "2025-05-13 14:54",
