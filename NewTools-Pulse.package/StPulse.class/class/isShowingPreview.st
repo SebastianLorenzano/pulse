@@ -1,4 +1,5 @@
 testing
 isShowingPreview
 
-	^ PreviewVisible
+	^ PreviewVisible ifNil: 
+		[ PreviewVisible := true ]

@@ -1,4 +1,4 @@
 private - accessing
 historyEntries
 
-	^ History entries
+	^ self class history entries

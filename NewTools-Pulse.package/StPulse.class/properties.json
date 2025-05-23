@@ -2,8 +2,7 @@
 	"classtraitcomposition" : "SpTModel classTrait",
 	"classvars" : [
 		"History",
-		"PreviewVisible",
-		"UniqueInstance"
+		"PreviewVisible"
 	],
 	"instvars" : [
 		"searchPresenter",
