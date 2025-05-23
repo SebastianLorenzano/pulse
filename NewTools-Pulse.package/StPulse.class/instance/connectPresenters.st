@@ -24,7 +24,11 @@ connectPresenters
 	self addToMillerList: editorListPresenter.
 	self addToMillerList: toolListPresenter.
 	paginator 
-		whenSelectedPageChangedDo: [ :newValue | 
-			activePresenter := paginator pages at: newValue. 
+		whenSelectedPageChangedDo: [ :newValue |
+			| newActivePresenter | 
+			newActivePresenter := paginator pages at: newValue.
+			activePresenter ifNotNil: [ 
+				listLayout replace: activePresenter with: newActivePresenter	 ].
+			activePresenter := newActivePresenter.	
 			self updateListLabel ] ;
 		selectPage: (self class tabIndexToOpenAtStart)

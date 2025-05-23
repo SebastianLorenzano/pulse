@@ -23,16 +23,7 @@ initializePresenters
         icon: (self iconNamed: #help);
         action: [ self showPopover: helpButton ].
 
-	millerList := self instantiate: SpMillerColumnPresenter.
-	millerList  
-		withoutHorizontalScrollBar;
-		visiblePages: 1;
-		spacing: 5;
-		presenterBlock: [ :aModel |  
-				self acceptSelection. 
-				SpNullMillerPresenter new setModelBeforeInitialization: activePresenter ].
 	paginator := SpPaginatorPresenter new.
 	paginator visiblePages: 1.
-	paginator chainTo: millerList.
 	paginator withoutResizingEdges
 	

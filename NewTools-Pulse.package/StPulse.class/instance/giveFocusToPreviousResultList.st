@@ -6,4 +6,4 @@ giveFocusToPreviousResultList
 		ifTrue: [ paginator selectPage: paginator pages size ]
 		ifFalse: [ paginator selectPage: (paginator pages indexOf: activePresenter) - 1 ].
 		
-	millerList takeKeyboardFocus
+	activePresenter takeKeyboardFocus
