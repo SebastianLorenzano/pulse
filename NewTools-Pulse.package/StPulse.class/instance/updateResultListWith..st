@@ -5,6 +5,7 @@ updateResultListWith: aCollection
 	self updateWorker schedule: [ 
 		self application defer: [
 			| list |
+			'ok' crTrace.
 			list := (
 				aCollection isEmpty 
 				and: [ searchPresenter text isEmpty 
@@ -15,4 +16,4 @@ updateResultListWith: aCollection
 			emptyPresenter visible: list isEmpty.
 			activePresenter updateItemsKeepingSelection: list.
 			(activePresenter selectedItem isNil and: [ list isNotEmpty ])
-				ifTrue: [ environmentListPresenter selectFirst ] ] ]
+				ifTrue: [ activePresenter selectFirst ] ] ]

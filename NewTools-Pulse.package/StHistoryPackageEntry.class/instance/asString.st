@@ -1,4 +1,4 @@
 converting
 asString
 
-	^ self contentEvaluated "name"
+	^ self contentString

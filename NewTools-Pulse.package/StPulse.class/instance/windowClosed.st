@@ -3,4 +3,7 @@ windowClosed
 
 	service stop.
 	updateWorker stop.
-	searchWorker stop
+	searchWorker stop.
+	service := nil.
+	updateWorker := nil.
+	searchWorker := nil.

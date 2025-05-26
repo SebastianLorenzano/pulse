@@ -1,9 +1,6 @@
 private - actions
 giveFocusToResultListAtLast
 	
-	| aux |
-	
-	activePresenter takeKeyboardFocus.
-	aux := activePresenter items size.
-	activePresenter selectIndex:  aux scrollToSelection: true
-	
+
+	activePresenter selectIndex:  activePresenter items size scrollToSelection: true.
+	activePresenter takeKeyboardFocus

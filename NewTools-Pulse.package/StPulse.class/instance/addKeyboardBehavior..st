@@ -1,7 +1,6 @@
 initialization
 addKeyboardBehavior: aPresenter
 
-	aPresenter whenActivatedDo: [ self acceptSelection ].
 	aPresenter 
 		addShortcutWith: [ :action | action 
 			shortcutKey: Character arrowUp asKeyCombination;

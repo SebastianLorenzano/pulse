@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 accept: aSpotter
 
 	aSpotter visitMethodEntry: self

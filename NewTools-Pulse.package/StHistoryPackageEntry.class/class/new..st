@@ -2,5 +2,5 @@ instance creation
 new: aStEntry
 
 	^ self new 
-		contentString: aStEntry content ;
+		contentName: aStEntry content name;
 		yourself

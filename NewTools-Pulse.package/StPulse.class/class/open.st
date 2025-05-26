@@ -2,4 +2,4 @@ instance creation
 open
 
 	<script>
-	self openWithText: ''
+	^ self openWithText: ''

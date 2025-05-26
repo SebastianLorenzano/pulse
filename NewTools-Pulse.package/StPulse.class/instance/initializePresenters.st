@@ -2,7 +2,7 @@ initialization
 initializePresenters
 
 	self addStyle: 'stPulse'.
-	
+
 	emptyPresenter := self newLabel 
 		label: 'No results yet...';
 		visible: false ;
@@ -12,6 +12,8 @@ initializePresenters
 		addStyle: 'stPulseSearch';
 		yourself.
 
+	listLabel := self newLabel label: 'List'.
+
 	environmentListPresenter := self newResultList.
 	editorListPresenter := self newResultList.
 	toolListPresenter := self newResultList.
@@ -19,5 +21,8 @@ initializePresenters
     helpButton := self newButton
         addStyle: 'small';
         icon: (self iconNamed: #help);
-        action: [ self showPopover: helpButton ]
+        action: [ self showPopover: helpButton ].
+	self initializePaginator.
+	activePresenter := paginator pages at: paginator selectedPage
+	
 	

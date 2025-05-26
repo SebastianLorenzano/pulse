@@ -6,9 +6,3 @@ contentEvaluated
 			source: self contentString;
 			evaluate ]
 	onErrorDo: [ nil ]
-
-
-
-	
-	
-	
