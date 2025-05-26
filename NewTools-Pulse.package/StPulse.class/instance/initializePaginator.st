@@ -1,12 +1,13 @@
 initialization
 initializePaginator
 
+	paginator := SpPaginatorPresenter new
+		visiblePages: 1 ;
+		withoutResizingEdges ;
+		yourself.
+
 	self addToMillerList: environmentListPresenter.
 	self addToMillerList: editorListPresenter.
 	self addToMillerList: toolListPresenter.
 	
-	paginator whenSelectedPageChangedDo: [ :newValue |
-		self updateActivePresenter: newValue ].
-
-	self application defer: [
-		paginator selectPage: (self class tabIndexToOpenAtStart) ]
+		paginator selectPage: (self class tabIndexToOpenAtStart).

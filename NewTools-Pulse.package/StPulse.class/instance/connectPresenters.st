@@ -16,8 +16,13 @@ connectPresenters
 			shortcutKey: Character arrowUp asKeyCombination;
 			action: [ self giveFocusToResultListAtLast ] ] ;
 		takeKeyboardFocus.
+	environmentListPresenter whenActivatedDo: [ self acceptSelection ].
+	editorListPresenter whenActivatedDo: [ self acceptSelection ].
+	toolListPresenter whenActivatedDo: [ self acceptSelection ].
 	self addKeyboardBehavior: environmentListPresenter.
 	self addKeyboardBehavior: editorListPresenter.
 	self addKeyboardBehavior: toolListPresenter.
 	
-	self initializePaginator
+	paginator whenSelectedPageChangedDo: [ :newValue |
+		self updateActivePresenter: newValue.
+		self doSearchOutsideOfService ].

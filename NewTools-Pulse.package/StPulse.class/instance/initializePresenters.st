@@ -3,8 +3,6 @@ initializePresenters
 
 	self addStyle: 'stPulse'.
 
-	activePresenter := self newNullPresenter.
-	
 	emptyPresenter := self newLabel 
 		label: 'No results yet...';
 		visible: false ;
@@ -24,8 +22,7 @@ initializePresenters
         addStyle: 'small';
         icon: (self iconNamed: #help);
         action: [ self showPopover: helpButton ].
-
-	paginator := SpPaginatorPresenter new.
-	paginator visiblePages: 1.
-	paginator withoutResizingEdges
+	self initializePaginator.
+	activePresenter := paginator pages at: paginator selectedPage
+	
 	

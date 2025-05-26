@@ -5,6 +5,7 @@ updateResultListWith: aCollection
 	self updateWorker schedule: [ 
 		self application defer: [
 			| list |
+			'ok' crTrace.
 			list := (
 				aCollection isEmpty 
 				and: [ searchPresenter text isEmpty 

@@ -13,11 +13,11 @@ defaultLayout
   						child: (self newPresenter
 							addStyle: 'stPulseList' ;
 							layout: ((listLayout := SpBoxLayout newTopToBottom)
-								"add: (SpBoxLayout newLeftToRight 
+								add: (SpBoxLayout newLeftToRight 
 										hAlignCenter;
 										add: listLabel;
 										yourself) 
-									expand: false;"
+									expand: false;
 								add: activePresenter expand: true;
 								yourself);
 							yourself);
