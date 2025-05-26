@@ -6,7 +6,6 @@ giveFocusToSearchTextArrowUp
 	activePresenter items ifEmpty: [ 
 		searchPresenter takeKeyboardFocus.
 		^ self ].
-
 	index := activePresenter selectedIndex.
 	index = 1
 		ifTrue: [ searchPresenter takeKeyboardFocus ]
