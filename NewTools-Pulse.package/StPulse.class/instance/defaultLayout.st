@@ -12,7 +12,7 @@ defaultLayout
                         yourself ;
                         child: (self newPresenter
                             addStyle: 'stPulseList' ;
-                            layout: ((listLayout := SpBoxLayout newTopToBottom)
+                            layout: (listLayout := SpBoxLayout newTopToBottom
 											add: (SpBoxLayout newLeftToRight 
 												hAlignCenter;
 												add: listLabel ;
@@ -31,5 +31,6 @@ defaultLayout
 				yourself) 
 			expand: false ;
 			yourself.
+			self haltOnce.
     self isShowingPreview ifTrue: [ self addPreviewPanelTo: contentsLayout ].
     ^ result

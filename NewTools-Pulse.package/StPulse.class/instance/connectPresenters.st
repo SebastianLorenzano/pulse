@@ -19,16 +19,4 @@ connectPresenters
 	self addKeyboardBehavior: environmentListPresenter.
 	self addKeyboardBehavior: editorListPresenter.
 	self addKeyboardBehavior: toolListPresenter.
-	
-	self addToMillerList: environmentListPresenter.
-	self addToMillerList: editorListPresenter.
-	self addToMillerList: toolListPresenter.
-	paginator 
-		whenSelectedPageChangedDo: [ :newValue |
-			| newActivePresenter | 
-			newActivePresenter := paginator pages at: newValue.
-			activePresenter ifNotNil: [ 
-				listLayout replace: activePresenter with: newActivePresenter	 ].
-			activePresenter := newActivePresenter.	
-			self updateListLabel ] ;
-		selectPage: (self class tabIndexToOpenAtStart)
+	self initializePaginator.
