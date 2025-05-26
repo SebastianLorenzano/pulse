@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"contentName"
+	],
 	"name" : "StHistoryPackageEntry",
 	"type" : "normal"
 }
