@@ -1,10 +1,11 @@
 private
 tabActivated: aPresenter
 
+	self halt.
 	(aPresenter = activePresenter or: [ aPresenter isNil ]) 
 		ifTrue: [ ^ self ].
 		
-	activePresenter := aPresenter.
+	"activePresenter := aPresenter."
 	previewContainer ifNotNil: [ previewContainer removeAll ].
 	self updateSearchPlaceHolder.
 	

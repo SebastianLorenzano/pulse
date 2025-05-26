@@ -2,6 +2,8 @@ initialization
 initializePresenters
 
 	self addStyle: 'stPulse'.
+
+	activePresenter := self newNullPresenter.
 	
 	emptyPresenter := self newLabel 
 		label: 'No results yet...';

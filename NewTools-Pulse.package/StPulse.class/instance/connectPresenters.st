@@ -19,4 +19,5 @@ connectPresenters
 	self addKeyboardBehavior: environmentListPresenter.
 	self addKeyboardBehavior: editorListPresenter.
 	self addKeyboardBehavior: toolListPresenter.
-	self initializePaginator.
+	
+	self initializePaginator
