@@ -4,6 +4,4 @@ giveFocusToNextResultList
 	| nextPresenter |
 	nextPresenter := paginator pages last = activePresenter 
 		ifTrue: [ paginator selectPage: 1 ]
-		ifFalse: [ paginator selectPage: (paginator pages indexOf: activePresenter) + 1 ].
-		
-	activePresenter takeKeyboardFocus
+		ifFalse: [ paginator selectPage: (paginator pages indexOf: activePresenter) + 1 ]

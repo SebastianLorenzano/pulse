@@ -8,4 +8,5 @@ updateActivePresenter: newValue
 		replace: activePresenter
 		with: newActivePresenter.
 	activePresenter := newActivePresenter.
+	activePresenter takeKeyboardFocus.
 	self updateListLabel
