@@ -1,4 +1,4 @@
 private
-addToMillerList: aPresenter
+addToPaginator: aPresenter
 
 	paginator addPage: aPresenter

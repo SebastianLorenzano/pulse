@@ -1,0 +1,2 @@
+I wrap an Enviroment entry (Classes, Methods and Packages), and then I'm stored in StPulseHistoryCollection.
+Each of the classes that inherits from me should define its behavior when being used, as the idea is to instead of storing the object, store a string that later allows you to reconstruct the object, thus evading leaks and hard references.

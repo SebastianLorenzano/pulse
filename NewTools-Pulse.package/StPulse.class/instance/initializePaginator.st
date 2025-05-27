@@ -6,8 +6,8 @@ initializePaginator
 		withoutResizingEdges ;
 		yourself.
 
-	self addToMillerList: environmentListPresenter.
-	self addToMillerList: editorListPresenter.
-	self addToMillerList: toolListPresenter.
+	self addToPaginator: self environmentContext.
+	self addToPaginator: self windowsContext.
+	self addToPaginator: self toolsContext.
 	
-		paginator selectPage: (self class tabIndexToOpenAtStart).
+	paginator selectPage: (self class tabIndexToOpenAtStart)

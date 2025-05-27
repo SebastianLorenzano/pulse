@@ -1,0 +1,1 @@
+I wrap a Class or Trait entry, and store its content printString, then later using OpalCompiler to compile it into an object when needed.

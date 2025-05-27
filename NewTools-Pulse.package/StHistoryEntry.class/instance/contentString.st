@@ -1,3 +1,4 @@
 accessing
 contentString
+
 	^ self subclassResponsibility

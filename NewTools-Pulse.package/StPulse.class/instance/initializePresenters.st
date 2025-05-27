@@ -14,15 +14,11 @@ initializePresenters
 
 	listLabel := self newLabel label: 'List'.
 
-	environmentListPresenter := self newResultList.
-	editorListPresenter := self newResultList.
-	toolListPresenter := self newResultList.
+	activePresenter := self newResultList.
 		
     helpButton := self newButton
         addStyle: 'small';
         icon: (self iconNamed: #help);
         action: [ self showPopover: helpButton ].
-	self initializePaginator.
-	activePresenter := paginator pages at: paginator selectedPage
-	
-	
+
+	self initializePaginator

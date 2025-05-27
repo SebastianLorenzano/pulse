@@ -9,7 +9,7 @@ updateResultListWith: aCollection
 			list := (
 				aCollection isEmpty 
 				and: [ searchPresenter text isEmpty 
-				and: activePresenter = environmentListPresenter ] )
+				and: self selectedContext = environmentContext ] )
 		  	 		ifTrue: [ self historyEntries ]
 					ifFalse: [ aCollection ].
 
