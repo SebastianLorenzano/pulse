@@ -24,5 +24,5 @@ connectPresenters
 	self addKeyboardBehavior: toolListPresenter.
 	
 	paginator whenSelectedPageChangedDo: [ :newValue |
-		self application defer: [ 		self updateActivePresenter: newValue.
-		self doSearchOutsideOfService ]. ]
+		self application defer: [ 
+			self updateActivePresenter: newValue ] ]

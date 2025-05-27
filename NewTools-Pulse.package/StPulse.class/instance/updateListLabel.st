@@ -1,14 +1,16 @@
 private - updating
 updateListLabel
-
+"1 = Environment page, 2 = Windows page, 3 = Commands page"
+	| index |
 	listLabel ifNil: [ ^ self ].
-	activePresenter = environmentListPresenter ifTrue: [
+	index := paginator selectedPage. 
+	index = 1 ifTrue: [
 		listLabel label: 'Environment'.
 			^ self ].
-	activePresenter = editorListPresenter ifTrue: [
+	index = 2 ifTrue: [
 		listLabel label: 'Windows'.
 			^ self ].
-	activePresenter = toolListPresenter ifTrue: [ 
+	index = 3 ifTrue: [ 
 		listLabel label: 'Commands'. 
 			^ self].
 	^ self

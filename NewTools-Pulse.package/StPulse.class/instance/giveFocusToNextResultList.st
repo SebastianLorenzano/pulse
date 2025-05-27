@@ -1,7 +1,6 @@
 private - actions
 giveFocusToNextResultList
-
-	| nextPresenter |
-	nextPresenter := paginator pages last = activePresenter 
+"If selectedPage = last page select first, else select selectedPage + 1"
+	paginator selectedPage = paginator pages size
 		ifTrue: [ paginator selectPage: 1 ]
-		ifFalse: [ paginator selectPage: (paginator pages indexOf: activePresenter) + 1 ]
+		ifFalse: [ paginator selectPage: paginator selectedPage + 1 ]

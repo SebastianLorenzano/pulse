@@ -1,7 +1,7 @@
 private - accessing
 selectedContext
 
-	activePresenter = editorListPresenter ifTrue: [ ^ self windowsContext ].
-	activePresenter = toolListPresenter ifTrue: [ ^ self toolsContext ].
+	paginator selectedPage = 1 ifTrue: [ ^ self environmentContext ].
+	paginator selectedPage = 2 ifTrue: [ ^ self windowsContext ].
 	
-	^  self environmentContext
+	^  self toolsContext
