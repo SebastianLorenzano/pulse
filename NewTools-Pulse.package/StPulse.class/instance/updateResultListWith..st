@@ -14,6 +14,6 @@ updateResultListWith: aCollection
 					ifFalse: [ aCollection ].
 
 			emptyPresenter visible: list isEmpty.
-			activePresenter updateItemsKeepingSelection: list.
-			(activePresenter selectedItem isNil and: [ list isNotEmpty ])
-				ifTrue: [ activePresenter selectFirst ] ] ]
+			listPresenter updateItemsKeepingSelection: list.
+			(listPresenter selectedItem isNil and: [ list isNotEmpty ])
+				ifTrue: [ listPresenter selectFirst ] ] ]

@@ -18,7 +18,7 @@ defaultLayout
 										add: listLabel;
 										yourself) 
 									expand: false;
-								add: activePresenter expand: true;
+								add: listPresenter expand: true;
 								yourself);
 							yourself);
 						yourself);

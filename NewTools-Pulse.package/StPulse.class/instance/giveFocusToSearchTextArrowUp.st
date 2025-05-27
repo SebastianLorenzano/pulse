@@ -3,11 +3,11 @@ giveFocusToSearchTextArrowUp
 
 	| index |
 
-	activePresenter items ifEmpty: [ 
+	listPresenter items ifEmpty: [ 
 		searchPresenter takeKeyboardFocus.
 		^ self ].
 
-	index := activePresenter selectedIndex.
+	index := listPresenter selectedIndex.
 	index = 1
 		ifTrue: [ searchPresenter takeKeyboardFocus ]
-		ifFalse: [ activePresenter selectIndex: index - 1 scrollToSelection: true ]
+		ifFalse: [ listPresenter selectIndex: index - 1 scrollToSelection: true ]

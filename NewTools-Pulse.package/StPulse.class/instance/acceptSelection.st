@@ -3,7 +3,7 @@ acceptSelection
 
 	self withWindowDo: [ :aWindow | aWindow close ].
 	
-	activePresenter selectedItem
+	listPresenter selectedItem
 		ifNotNil: [ :anEntry |
 			| historyEntry |
 			(historyEntry := anEntry asHistoryEntry)

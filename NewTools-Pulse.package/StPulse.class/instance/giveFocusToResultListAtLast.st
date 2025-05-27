@@ -2,5 +2,5 @@ private - actions
 giveFocusToResultListAtLast
 	
 
-	activePresenter selectIndex:  activePresenter items size scrollToSelection: true.
-	activePresenter takeKeyboardFocus
+	listPresenter selectIndex:  listPresenter items size scrollToSelection: true.
+	listPresenter takeKeyboardFocus

@@ -14,7 +14,7 @@ initializePresenters
 
 	listLabel := self newLabel label: 'List'.
 
-	activePresenter := self newResultList.
+	listPresenter := self newResultList.
 		
     helpButton := self newButton
         addStyle: 'small';
