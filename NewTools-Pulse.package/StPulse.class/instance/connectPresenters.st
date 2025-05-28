@@ -18,7 +18,7 @@ connectPresenters
 		takeKeyboardFocus.
 	listPresenter whenActivatedDo: [ self acceptSelection ].
 	self addKeyboardBehavior: listPresenter.
-
+	
 	paginator whenSelectedPageChangedDo: [ :newValue |
 		self application defer: [ 
 			self updateActivePresenter: newValue ] ].

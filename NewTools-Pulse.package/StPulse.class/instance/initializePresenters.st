@@ -12,13 +12,17 @@ initializePresenters
 		addStyle: 'stPulseSearch';
 		yourself.
 
-	listLabel := self newLabel label: 'List'.
-
+	listLabel := self newLabel 
+	label: 'List' ;
+	addStyle: 'stPulseLabel' ;
+	yourself.
+	
 	listPresenter := self newResultList.
-		
     helpButton := self newButton
         addStyle: 'small';
         icon: (self iconNamed: #help);
         action: [ self showPopover: helpButton ].
-
-	self initializePaginator
+	self initializePaginator.
+	
+	toolbar := self newToolbar.
+	self initializeToolbar

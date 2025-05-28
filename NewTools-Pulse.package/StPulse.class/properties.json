@@ -6,7 +6,10 @@
 	],
 	"instvars" : [
 		"searchPresenter",
+		"listPresenter",
 		"emptyPresenter",
+		"listLabel",
+		"paginator",
 		"windowsContext",
 		"toolsContext",
 		"environmentContext",
@@ -18,10 +21,7 @@
 		"updateWorker",
 		"waitingSearchText",
 		"lastSearchText",
-		"listLabel",
-		"paginator",
-		"listLayout",
-		"listPresenter"
+		"toolbar"
 	],
 	"name" : "StPulse",
 	"commentStamp" : "2025-05-13 14:54",

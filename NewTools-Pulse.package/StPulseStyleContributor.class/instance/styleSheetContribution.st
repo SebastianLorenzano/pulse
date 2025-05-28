@@ -19,7 +19,13 @@ styleSheetContribution
 	.stPulsePreview [ 
 		Draw { #color: #transparent } ],
 	.stPulseHelp [  
-		Geometry { #height: 125, #width: 250 },
-		Draw { #backgroundColor: EnvironmentColor(#background) },
-		Container { #borderWidth: 5, #borderColor: EnvironmentColor(#background) } ] 
+		Geometry { #height: 150, #width: 250 },
+		Draw { #backgroundColor: #transparent, #color: #transparent },
+		Container { #borderWidth: 1, #borderColor: EnvironmentColor(#background) } ],
+	.stPulseLabel [ 
+		Geometry { #height: 25},
+		Font { #size: 11 } ],
+	.stPulseToolbar [ 
+		Geometry { #height: 10, #width: 10 }
+		 ]
 ]'

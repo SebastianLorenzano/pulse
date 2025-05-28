@@ -10,7 +10,7 @@ defaultLayout
 						addOverlay: emptyPresenter withConstraints: [ :c | c vAlignCenter; hAlignCenter ] ;
   						child: (self newPresenter
 							addStyle: 'stPulseList' ;
-							layout: ((listLayout := SpBoxLayout newTopToBottom)
+							layout: (SpBoxLayout newTopToBottom
 								add: (SpBoxLayout newLeftToRight 
 										hAlignCenter;
 										add: listLabel;
@@ -23,11 +23,12 @@ defaultLayout
       				yourself);
 			add: (SpOverlayLayout new 
 				addOverlay: helpButton withConstraints: [ :c | c vAlignEnd; hAlignEnd ];
-				child: (SpBoxLayout newLeftToRight 
+				addOverlay: toolbar withConstraints: [ :c | c vAlignStart ; hAlignStart ];
+				child: (SpBoxLayout newLeftToRight
 					hAlignCenter;
 					add: paginator
 					expand: false ;
-					yourself)
+					yourself) ;
 				yourself)
 			expand: false;
 			yourself ;
