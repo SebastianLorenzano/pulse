@@ -9,7 +9,7 @@ initializePresenters
 		yourself.
 
 	searchPresenter := self newSearchInput
-		addStyle: 'stPulseSearch';
+		addStyle: 'stPulseLabel';
 		yourself.
 
 	listLabel := self newLabel 

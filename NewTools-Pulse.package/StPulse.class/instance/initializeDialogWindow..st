@@ -1,2 +1,4 @@
 initialization
 initializeDialogWindow: aDialogWindowPresenter
+
+	aDialogWindowPresenter closeOnBackdropClick: true
