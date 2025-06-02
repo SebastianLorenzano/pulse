@@ -5,7 +5,7 @@ initializePresenters
 
 	emptyPresenter := self newLabel 
 		label: 'No results yet...';
-		visible: false ;
+		visible: false;
 		yourself.
 
 	searchPresenter := self newSearchInput

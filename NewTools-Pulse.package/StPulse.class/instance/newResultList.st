@@ -3,5 +3,5 @@ newResultList
 	
 	^ self newEasyListView
 		addStyle: 'stPulseList' ;
-		rowPresenterClass: StPulseRow ;
+		rowPresenterClass: StPulseRow;
 		yourself

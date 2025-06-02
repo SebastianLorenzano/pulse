@@ -15,7 +15,9 @@ styleSheetContribution
 	.stPulseList [
 		Container { #borderWidth: 0 },
 		Draw { #color: #transparent },
-		Geometry { #hResizing: false } ],	
+		Geometry { #hResizing: false } ],
+	.stPulseRow [  
+		Container { #borderWidth: 2 } ],	
 	.stPulsePreview [ 
 		Draw { #color: #transparent } ],
 	.stPulseButton [  

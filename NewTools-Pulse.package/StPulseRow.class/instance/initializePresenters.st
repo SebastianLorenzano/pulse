@@ -2,7 +2,7 @@ initialization
 initializePresenters
 
 	self addStyle: 'stRow'.
-	self addStyle: 'dockSpotterRow'.
+	self addStyle: 'stPulseRow'.
 	
 	iconPresenter := self newImage.
 	namePresenter := self newLabel.

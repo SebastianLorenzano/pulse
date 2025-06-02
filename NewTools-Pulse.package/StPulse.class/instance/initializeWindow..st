@@ -5,11 +5,10 @@ initializeWindow: aWindowPresenter
 	aWindowPresenter 
 		title: 'Pulse';
 		withoutDecorations;
-		windowIcon: self windowIcon;
-		initialExtent: self preferredExtent ;
-		whenClosedDo: [ 
+		"windowIcon: self windowIcon;"
+		initialExtent: 900@500;
+		whenClosedDo: [
 			self windowClosed. 
 			self class windowClosed ];
-		whenResizingDo: [ :ann | self preferredExtent: ann newSize ];
 		centered.
 	self addProcessors: aWindowPresenter
