@@ -13,6 +13,7 @@ initializeButtons
 		addStyle: 'small';
 		addStyle: 'stPulseButton';
 		icon: (self application iconNamed: #configuration);
+		action: [ self openSettingsBrowser ];
 		help: 'Open settings browser to configure StPulse'.
 	
 	buttonsToolbar := self newPresenter
