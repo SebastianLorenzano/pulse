@@ -21,7 +21,8 @@
 		"updateWorker",
 		"waitingSearchText",
 		"lastSearchText",
-		"toolbar"
+		"buttonsToolbar",
+		"settingsButton"
 	],
 	"name" : "StPulse",
 	"commentStamp" : "2025-05-13 14:54",

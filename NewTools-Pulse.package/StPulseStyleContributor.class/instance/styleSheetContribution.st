@@ -18,6 +18,9 @@ styleSheetContribution
 		Geometry { #hResizing: false } ],	
 	.stPulsePreview [ 
 		Draw { #color: #transparent } ],
+	.stPulseButton [  
+		Draw { #backgroundColor: #transparent, #color: #transparent },
+		Container { #borderWidth: 0 } ],
 	.stPulseHelp [  
 		Geometry { #height: 150, #width: 250 },
 		Draw { #backgroundColor: #transparent, #color: #transparent },

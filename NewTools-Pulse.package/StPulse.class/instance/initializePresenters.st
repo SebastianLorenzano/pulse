@@ -18,11 +18,6 @@ initializePresenters
 	yourself.
 	
 	listPresenter := self newResultList.
-    helpButton := self newButton
-        addStyle: 'small';
-        icon: (self iconNamed: #help);
-        action: [ self showPopover: helpButton ].
-	self initializePaginator.
 	
-	toolbar := self newToolbar.
-	self initializeToolbar
+	self initializePaginator.
+	self initializeButtons

@@ -22,8 +22,7 @@ defaultLayout
 						yourself);	
       				yourself);
 			add: (SpOverlayLayout new 
-				addOverlay: helpButton withConstraints: [ :c | c vAlignEnd; hAlignEnd ];
-				addOverlay: toolbar withConstraints: [ :c | c vAlignStart ; hAlignStart ];
+				addOverlay: buttonsToolbar withConstraints: [ :c | c vAlignEnd ; hAlignEnd ];
 				child: (SpBoxLayout newLeftToRight
 					hAlignCenter;
 					add: paginator
