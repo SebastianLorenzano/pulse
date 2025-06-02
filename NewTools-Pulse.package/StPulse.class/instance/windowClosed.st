@@ -1,9 +1,9 @@
 private - accessing
 windowClosed
 
-	service stop.
-	updateWorker stop.
-	searchWorker stop.
+	[ service ifNotNil: [  ] ].
+	updateWorker ifNotNil: [ updateWorker stop ].
+	searchWorker ifNotNil: [ searchWorker stop ].
 	service := nil.
 	updateWorker := nil.
-	searchWorker := nil.
+	searchWorker := nil
