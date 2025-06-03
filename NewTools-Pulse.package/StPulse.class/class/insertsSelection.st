@@ -1,4 +1,5 @@
 settings
 insertsSelection
 
-	^ false
+	^ InsertsSelection ifNil: [ 
+		InsertsSelection := false ]

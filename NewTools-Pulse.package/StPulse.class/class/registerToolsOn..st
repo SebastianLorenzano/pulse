@@ -2,4 +2,4 @@ tools registry
 registerToolsOn: registry
 	"self registerToolsOn: Smalltalk tools"
 
-	registry register: self as: #spotter
+	registry register: self as: #pulse
