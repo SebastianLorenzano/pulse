@@ -13,24 +13,26 @@ styleSheetContribution
 		Geometry { #minHeight: 35, #vResizing: false },
 		Text { #drawKeyboardFocus: false } ],
 	.stPulseList [
-		Container { #borderWidth: 0 },
+		Container { #borderWidth: 0 , #intercellSpacing: 1, #rowHeight: 26  },
 		Draw { #color: #transparent },
 		Geometry { #hResizing: false } ],
-	.stPulseRow [  
-		Container { #borderWidth: 2 } ],	
 	.stPulsePreview [ 
 		Draw { #color: #transparent } ],
-	.stPulseButton [  
+	.stPulseLabel [ 
+		Geometry { #height: 25},
+		Font { #size: 11, #name: EnvironmentFont(#default) } ],
+	.stPulseRow [  
+		Container { #borderWidth: 2 },
+		Font { #size: 25 } ],	
+	.stPulseRowText [ 
+		Font { #name : EnvironmentFont(#default), #size : 10.6 } ],
+	.stPulseButton [ 
+		Geometry { #height: 150}, 
 		Draw { #backgroundColor: #transparent, #color: #transparent },
 		Container { #borderWidth: 0 } ],
 	.stPulseHelp [  
-		Geometry { #height: 150, #width: 250 },
-		Draw { #backgroundColor: #transparent, #color: #transparent },
-		Container { #borderWidth: 1, #borderColor: EnvironmentColor(#background) } ],
-	.stPulseLabel [ 
-		Geometry { #height: 25},
-		Font { #size: 11 } ],
+		Geometry { #height: 175, #width: 265 },
+		Draw { #backgroundColor: #transparent, #color: #transparent } ],
 	.stPulseToolbar [ 
-		Geometry { #height: 10, #width: 10 }
-		 ]
+		Geometry { #height: 10, #width: 10 } ]
 ]'
