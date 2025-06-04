@@ -11,7 +11,7 @@ updateResultListWith: aCollection
 				and: self selectedContext = environmentContext ] )
 		  	 		ifTrue: [ self historyEntries ]
 					ifFalse: [ aCollection ].
-
+			self hideSpinner.
 			emptyPresenter visible: list isEmpty.
 			listPresenter updateItemsKeepingSelection: list.
 			(listPresenter selectedItem isNil and: [ list isNotEmpty ])

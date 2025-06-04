@@ -17,6 +17,7 @@ initializePresenters
 	spinner := self newSpinner
 		addStyle: 'stPulseSpinner';
 		yourself.
+	spinner hide.
 
 	listLabel := self newLabel 
 		label: 'List';
