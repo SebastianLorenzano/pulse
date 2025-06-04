@@ -29,7 +29,7 @@ styleSheetContribution
 		Draw { #backgroundColor: #transparent, #color: #transparent },
 		Container { #borderWidth: 0 } ],
 	.stPulseHelp [  
-		Geometry { #height: 238, #width: 370 },
+		Geometry { #height: 250, #width: 380 },
 		Draw { #backgroundColor: #transparent, #color: #transparent } ],
 	.stPulseToolbar [ 
 		Geometry { #height: 10, #width: 10 } ]

@@ -10,5 +10,6 @@ tips
 		'<shift + enter>' -> 'opens Pulse on Environment' .
 		'<shift + meta + enter>' -> 'opens Pulse on Commands' .
 		'<shift + alt + enter>' -> 'opens Pulse on Windows' .
-		'<shift + enter> while on Pulse' -> 'opens Finder'
+		'<shift + enter> while on Pulse' -> 'opens Finder' .
+		'you can resize the window' -> ''
 	}
