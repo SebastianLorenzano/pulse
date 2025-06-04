@@ -9,5 +9,4 @@ initializePaginator
 	self addToPaginator: self environmentContext.
 	self addToPaginator: self windowsContext.
 	self addToPaginator: self toolsContext.
-	self haltOnce.
 	paginator selectPage: (self class initialPageIndex)

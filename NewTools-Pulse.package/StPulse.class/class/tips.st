@@ -2,7 +2,7 @@ private
 tips
 
 	^ {
-		'←   ↑   →   ↓' -> 'navigation shortkeys'.
+		'arrows' -> 'navigation shortkeys'.
 		'ctrl + arrows' -> 'navigation on search bar'.
 		'<meta+b>'  -> 'filters for Classes' .
 		'<meta+m>' -> 'filters for Implementors' .
