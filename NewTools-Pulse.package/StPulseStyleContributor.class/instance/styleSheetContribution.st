@@ -22,10 +22,8 @@ styleSheetContribution
 		Geometry { #height: 25},
 		Font { #size: 11, #name: EnvironmentFont(#default) } ],
 	.stPulseRow [  
-		Container { #borderWidth: 2 },
-		Font { #size: 25 } ],	
-	.stPulseRowText [ 
-		Font { #name : EnvironmentFont(#default), #size : 10.6 } ],
+		Container { #borderWidth: 3 } ],	
+	.stPulseRowText [ ],
 	.stPulseButton [ 
 		Geometry { #height: 150}, 
 		Draw { #backgroundColor: #transparent, #color: #transparent },
