@@ -21,12 +21,17 @@ defaultLayout
 							yourself);
 						yourself);	
       				yourself);
-			add: (SpOverlayLayout new 
-				addOverlay: buttonsToolbar withConstraints: [ :c | c vAlignEnd ; hAlignEnd ];
-				child: (SpBoxLayout newLeftToRight
-					hAlignCenter;
-					add: paginator
-					expand: false ;
+			add: (self newPresenter
+				addStyle: 'stPulsePaginatorLayout';
+				layout: (SpOverlayLayout new 
+					addOverlay: spinner withConstraints: [ :c | c vAlignStart; hAlignStart ];
+					addOverlay: buttonsToolbar withConstraints: [ :c | c vAlignEnd ; hAlignEnd ];
+					child: (SpBoxLayout newTopToBottom 
+						hAlignCenter;
+						vAlignCenter;
+						add: paginator
+						expand: false ;
+						yourself) ;
 					yourself) ;
 				yourself)
 			expand: false;

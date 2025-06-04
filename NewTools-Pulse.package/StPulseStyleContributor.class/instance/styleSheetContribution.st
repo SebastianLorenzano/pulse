@@ -32,5 +32,12 @@ styleSheetContribution
 		Geometry { #height: 250, #width: 380 },
 		Draw { #backgroundColor: #transparent, #color: #transparent } ],
 	.stPulseToolbar [ 
-		Geometry { #height: 10, #width: 10 } ]
+		Geometry { #height: 10, #width: 10 } ],
+	.stPulseSpinner [ 
+		Geometry { #height: 15, #width: 15 } ],
+	.stPulsePaginator [ 
+		Geometry { #height: 22 } ],
+	.stPulsePaginatorLayout [ 
+		Geometry { #height: 40 },
+		Container { #borderWidth: 3 } ]
 ]'

@@ -2,6 +2,8 @@ initialization
 initializePresenters
 
 	self addStyle: 'stPulse'.
+	self initializePaginator.
+	self initializeButtons.
 
 	emptyPresenter := self newLabel 
 		label: 'No results yet...';
@@ -12,12 +14,13 @@ initializePresenters
 		addStyle: 'stPulseSearch';
 		yourself.
 
+	spinner := self newSpinner
+		addStyle: 'stPulseSpinner';
+		yourself.
+
 	listLabel := self newLabel 
-	label: 'List' ;
-	addStyle: 'stPulseLabel' ;
-	yourself.
+		label: 'List';
+		addStyle: 'stPulseLabel';
+		yourself.
 	
-	listPresenter := self newResultList.
-	
-	self initializePaginator.
-	self initializeButtons
+	listPresenter := self newResultList

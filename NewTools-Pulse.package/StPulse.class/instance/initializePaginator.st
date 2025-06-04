@@ -2,8 +2,9 @@ initialization
 initializePaginator
 
 	paginator := SpPaginatorPresenter new
-		visiblePages: 1 ;
-		withoutResizingEdges ;
+		addStyle: 'stPulsePaginator';
+		visiblePages: 1;
+		withoutResizingEdges;
 		yourself.
 
 	self addToPaginator: self environmentContext.
