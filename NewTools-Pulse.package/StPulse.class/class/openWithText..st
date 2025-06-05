@@ -11,5 +11,5 @@ openWithText: aText
 			self reset.
 			^ StFinderPresenter openWithText: searchText ] ].
 	
-	pulse := self newWithText: aText.
+	pulse := self newWithText: aText asString.
 	^ pulse openModal

@@ -1,4 +1,4 @@
 *NewTools-Pulse
 openPulseCommandsShortcut
 
-	^ Character cr meta shift
+	^ Character cr meta shift asShortcut

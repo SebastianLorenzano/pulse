@@ -1,4 +1,4 @@
 *NewTools-Pulse
 openPulseWindowsShortcut
 
-	^ Character cr alt shift
+	^ Character cr shift alt asShortcut
