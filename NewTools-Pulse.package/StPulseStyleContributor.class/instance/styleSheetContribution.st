@@ -4,11 +4,11 @@ styleSheetContribution
 	^ SpStyleVariableSTONReader fromString: '
 .application [
 	.stPulse [ 
-		Container { #borderWidth: 2, #borderColor: #transparent },
-		Draw { #backgroundColor: #transparent } ],
+		Container { #borderWidth: 10, #borderColor: EnvironmentColor(#background) },
+		Draw { #backgroundColor: EnvironmentColor(#background) } ],
 	.stPulseSearch [ 
-		Container { #borderWidth: 0 },
-		Draw { #backgroundColor: EnvironmentColor(#background) },
+
+		Draw { #backgroundColor: EnvironmentColor(#lightBackground) },
 		Font { #size: 12 },
 		Geometry { #minHeight: 35, #vResizing: false },
 		Text { #drawKeyboardFocus: false } ],
@@ -26,11 +26,11 @@ styleSheetContribution
 	.stPulseRowText [ ],
 	.stPulseButton [ 
 		Geometry { #height: 150}, 
-		Draw { #backgroundColor: #transparent, #color: #transparent },
+		Draw { #backgroundColor: EnvironmentColor(#background), #color: EnvironmentColor(#background) },
 		Container { #borderWidth: 0 } ],
 	.stPulseHelp [  
 		Geometry { #height: 250, #width: 380 },
-		Draw { #backgroundColor: #transparent, #color: #transparent } ],
+		Draw { #backgroundColor: EnvironmentColor(#background), #color: EnvironmentColor(#background) } ],
 	.stPulseToolbar [ 
 		Geometry { #height: 10, #width: 10 } ],
 	.stPulseSpinner [ 
