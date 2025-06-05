@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SpEasyAbstractRowPresenter",
-	"category" : "NewTools-Pulse",
+	"category" : "NewTools-Pulse-View",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
