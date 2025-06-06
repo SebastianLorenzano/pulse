@@ -8,6 +8,6 @@
 	"instvars" : [
 		"collection"
 	],
-	"name" : "StPulseWeakHistoryCollectionTest",
+	"name" : "StPulseHistoryCollectionTest",
 	"type" : "normal"
 }

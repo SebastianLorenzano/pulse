@@ -7,7 +7,6 @@ testEntries
 	self assert: collection entries isNotNil.
 	collection add: entry1.
 	self assert: collection entries size equals: 1.
-	entry1 := nil.
-	3 timesRepeat: [Smalltalk garbageCollect].
-	self assert: collection entries size equals: 0.
+	entry1 content: nil.
+	self assert: collection entries size equals: 0
 	
