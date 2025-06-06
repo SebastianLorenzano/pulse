@@ -9,5 +9,5 @@ testMaxEntries
 	collection add: entry1.
 	self assert: collection entries first content equals: 'entry1'.
 	collection add: entry2.
-	self assert: collection entries first content equals: 'entry2'.
+	self assert: collection entries first content equals: 'entry2'
 	

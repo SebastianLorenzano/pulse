@@ -8,5 +8,5 @@ testClean
 	self assert: collection entries first equals: entry.
 	entry content: nil.
 	3 timesRepeat: [Smalltalk garbageCollect].
-	self assert: collection entries size equals: 0.
+	self assert: collection entries size equals: 0
 	

@@ -9,4 +9,4 @@ testSmoke
 
 	[ self shouldnt: [ window := StPulse openWithTextOnWindows: '2'  ] raise: Error ] ensure: [ window close ].
 
-	[ self shouldnt: [ window := StPulse openWithTextOnCommands: '3' ] raise: Error ] ensure: [ window close ].
+	[ self shouldnt: [ window := StPulse openWithTextOnCommands: '3' ] raise: Error ] ensure: [ window close ]

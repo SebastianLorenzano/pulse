@@ -7,4 +7,4 @@ testSearchingCandidates
 		window := pulse open.
 		candidates := pulse model candidatesFor: 'Test' inContext: pulse environmentContext.
 		self assert: candidates size equals: 25.	
-	] ensure: [ window close ].
+	] ensure: [ window close ]

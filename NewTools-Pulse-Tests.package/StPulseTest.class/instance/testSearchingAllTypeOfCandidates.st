@@ -19,4 +19,4 @@ testSearchingAllTypeOfCandidates
 		
 		candidates := pulse model candidatesFor: '' inContext: pulse toolsContext.
 		self assert: (candidates atWrap: 1) categoryLabel equals: 'menu'	
-	] ensure: [ window close ].
+	] ensure: [ window close ]
