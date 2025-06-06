@@ -16,6 +16,8 @@ initializeButtons
 		action: [ self openSettingsBrowser ];
 		help: 'Open settings browser to configure StPulse'.
 	
+	self addKeyboardBehavior: helpButton.
+	self addKeyboardBehavior: settingsButton.
 	buttonsToolbar := self newPresenter
 		layout: (SpBoxLayout newLeftToRight
 			add: settingsButton expand: false;

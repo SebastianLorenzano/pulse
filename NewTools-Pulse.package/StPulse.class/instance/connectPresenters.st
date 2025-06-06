@@ -16,14 +16,7 @@ connectPresenters
 			shortcutKey: Character arrowUp asKeyCombination;
 			action: [ self giveFocusToResultListAtLast ] ] ;
 		takeKeyboardFocus.
-	listPresenter 
-		addShortcutWith: [ :action | action 
-			shortcutKey: KeyboardKey right asKeyCombination actionModifier;
-			action: [ self giveFocusToNextResultList ] ];
-		addShortcutWith: [ :action | action 
-			shortcutKey: KeyboardKey left asKeyCombination actionModifier;
-			action: [ self giveFocusToPreviousResultList ] ];
-		whenActivatedDo: [ self acceptSelection ].
+	listPresenter whenActivatedDo: [ self acceptSelection ].
 	self addKeyboardBehavior: listPresenter.
 	
 	paginator whenSelectedPageChangedDo: [ :newValue |
