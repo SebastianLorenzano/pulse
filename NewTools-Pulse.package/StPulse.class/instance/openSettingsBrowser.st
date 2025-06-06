@@ -3,5 +3,5 @@ openSettingsBrowser
 
 	SettingBrowser new
 		rootNodes:
-			(SettingBrowser currentTree nodeNamed: #pulse) allChildren;
+		(SettingBrowser currentTree nodeNamed: #pulse) allChildren;
 		open

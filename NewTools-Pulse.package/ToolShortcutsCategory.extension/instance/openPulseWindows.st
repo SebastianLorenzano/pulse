@@ -6,6 +6,6 @@ openPulseWindows
 		| selection spot |
 		selection := target selection.
 		spot := (self tools toolNamed: #pulse).
-		(spot isInsertingSelection and: [ selection isNotNil ])
+		(spot insertsSelection and: [ selection isNotNil ])
 			ifTrue: [ spot  openWithTextOnWindows: selection ]
 			ifFalse: [ spot open ] ]

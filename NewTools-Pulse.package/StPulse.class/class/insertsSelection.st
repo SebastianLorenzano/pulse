@@ -1,5 +1,5 @@
 settings
-isInsertingSelection
+insertsSelection
 
 	^ InsertsSelection ifNil: [ 
 		InsertsSelection := false ]

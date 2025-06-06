@@ -1,4 +1,4 @@
-accessing
+settings
 resetHistory
 
 	<script>
