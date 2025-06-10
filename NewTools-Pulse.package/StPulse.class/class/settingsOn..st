@@ -17,7 +17,7 @@ settingsOn: aBuilder
 		
 	(aBuilder setting: #insertsSelection)
 		parent: #pulse;
-		default: true;
+		default: false;
 		target: self;
 		description: 'When opening pulse, insert the selected content into the search bar';
 		label: 'Inserts Selection'.

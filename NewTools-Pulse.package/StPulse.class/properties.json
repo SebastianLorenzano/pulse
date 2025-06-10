@@ -25,7 +25,8 @@
 		"buttonsToolbar",
 		"settingsButton",
 		"spinner",
-		"listLabelPresenter"
+		"listLabelPresenter",
+		"listLabelLayout"
 	],
 	"name" : "StPulse",
 	"commentStamp" : "2025-05-13 14:54",
