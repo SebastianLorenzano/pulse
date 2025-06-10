@@ -20,8 +20,7 @@ initializePresenters
 		yourself.
 	spinner hide.
 
-	listLabelPresenter := self newLabel 
-		label: 'List';
+	listLabelPresenter := self newLabel
 		addStyle: 'stPulseLabel';
 		yourself.
 	
