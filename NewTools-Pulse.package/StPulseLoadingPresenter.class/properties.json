@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "SpPresenter",
+	"category" : "NewTools-Pulse-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"imagePresenter",
+		"scales"
+	],
+	"name" : "StPulseLoadingPresenter",
+	"type" : "normal"
+}

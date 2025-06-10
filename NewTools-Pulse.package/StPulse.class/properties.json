@@ -10,7 +10,6 @@
 		"searchPresenter",
 		"listPresenter",
 		"emptyPresenter",
-		"listLabel",
 		"paginator",
 		"windowsContext",
 		"toolsContext",
@@ -25,7 +24,8 @@
 		"lastSearchText",
 		"buttonsToolbar",
 		"settingsButton",
-		"spinner"
+		"spinner",
+		"listLabelPresenter"
 	],
 	"name" : "StPulse",
 	"commentStamp" : "2025-05-13 14:54",

@@ -12,4 +12,4 @@ openWithText: aText
 			^ StFinderPresenter openWithText: searchText ] ].
 	
 	pulse := self newWithText: aText asString.
-	^ pulse open
+	^ pulse openModal

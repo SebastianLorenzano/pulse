@@ -1,7 +1,7 @@
 layout
 defaultLayout
 
-	^ SpBoxLayout newHorizontal
+	^ SpBoxLayout newLeftToRight
 		spacing: 5;
 		borderWidth: 2;
 		add: iconPresenter expand: false;
