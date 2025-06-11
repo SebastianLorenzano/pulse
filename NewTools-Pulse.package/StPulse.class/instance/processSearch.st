@@ -4,8 +4,12 @@ processSearch
 	spinner isVisible ifTrue: [ spinner updateStep ].
 	
 	waitingSearchText := searchPresenter text.
-	waitingSearchText = lastSearchText ifTrue: [ ^ self ].
-
-	lastSearchText := waitingSearchText.
-	spinner reset.
-	self doSearch: waitingSearchText 
+	waitingSearchText = lastSearchText 
+		ifTrue: [ 
+			candidatesFullSearchList
+				ifNil: [ self processAddedCandidates ]
+				ifNotNil: [ self processFullAddedCandidates ] ]
+		ifFalse: [ 
+			spinner reset.
+			lastSearchText := waitingSearchText.
+			self doSearch: waitingSearchText ].

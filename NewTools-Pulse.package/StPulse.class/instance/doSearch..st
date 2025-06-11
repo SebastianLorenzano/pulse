@@ -3,11 +3,10 @@ doSearch: aString
 	
 	self owner 
 		ifNil: [ ^ self ].
+	numCandidatesAdded := 0.
 	self searchWorker purge.
 	self searchWorker schedule: [ 
-		| candidates |
 		self showSpinner.
-		candidates := self model 
+		candidatesFullSearchList := self model 
 			candidatesFor: aString 
-			inContext: self selectedContext.
-		self updateResultListWith: candidates ] 
+			inContext: self selectedContext ] 

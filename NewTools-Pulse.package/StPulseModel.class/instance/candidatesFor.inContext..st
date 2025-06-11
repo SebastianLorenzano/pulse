@@ -4,7 +4,9 @@ candidatesFor: text inContext: aDockSpotterContext
 	| candidateList stream context processor |
 	
 	candidateList := StSpotterCandidatesList new.
+	candidateList announcer when: StSpotterCandidateAdded send: #candidateAdded: to: self.
 	stream := StSpotterStream new 
+		onAddedSelector: #addCandidate:in:;
 		receiver: candidateList;
 		yourself.
 

@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"candidateAddedAction"
+	],
 	"name" : "StPulseModel",
 	"type" : "normal"
 }

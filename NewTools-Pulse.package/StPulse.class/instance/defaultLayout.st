@@ -5,7 +5,7 @@ defaultLayout
 	result := SpOverlayLayout new
 		addOverlay: spinner withConstraints: [ :c | c vAlignEnd; hAlignStart ];
 		addOverlay: buttonsToolbar withConstraints: [ :c | c vAlignEnd ; hAlignEnd ];
-		addOverlay: emptyPresenter withConstraints: [ :c | c vAlignCenter; hAlignCenter ] ;
+		addOverlay: emptyPresenter withConstraints: [ :c | c vAlignCenter; hAlignCenter ];
 		child: (SpBoxLayout newTopToBottom 
 			add: searchPresenter expand: false;
 			add: (contentsLayout := SpBoxLayout newLeftToRight
