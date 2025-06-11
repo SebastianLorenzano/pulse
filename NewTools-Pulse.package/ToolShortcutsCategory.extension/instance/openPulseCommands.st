@@ -8,4 +8,4 @@ openPulseCommands
 		spot := (self tools toolNamed: #pulse).
 		(spot insertsSelection and: [ selection isNotNil ])
 			ifTrue: [ spot  openWithTextOnCommands: selection ]
-			ifFalse: [ spot open ] ]
+			ifFalse: [ spot openWithTextOnCommands: '' ] ]

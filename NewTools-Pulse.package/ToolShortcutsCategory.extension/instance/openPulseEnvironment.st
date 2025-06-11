@@ -8,4 +8,4 @@ openPulseEnvironment
 		spot := (self tools toolNamed: #pulse).
 		(spot insertsSelection and: [ selection isNotNil ])
 			ifTrue: [ spot  openWithTextOnEnvironment: selection ]
-			ifFalse: [ spot open ] ]
+			ifFalse: [ spot openWithTextOnEnvironment: '' ] ]

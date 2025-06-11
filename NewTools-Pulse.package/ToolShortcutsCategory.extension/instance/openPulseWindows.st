@@ -8,4 +8,4 @@ openPulseWindows
 		spot := (self tools toolNamed: #pulse).
 		(spot insertsSelection and: [ selection isNotNil ])
 			ifTrue: [ spot  openWithTextOnWindows: selection ]
-			ifFalse: [ spot open ] ]
+			ifFalse: [ spot openWithTextOnWindows: '' ] ]
