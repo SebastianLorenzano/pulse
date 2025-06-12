@@ -1,6 +1,7 @@
 {
 	"classtraitcomposition" : "SpTModel classTrait",
 	"classvars" : [
+		"Activated",
 		"History",
 		"InitialPageIndex",
 		"InsertsSelection",
