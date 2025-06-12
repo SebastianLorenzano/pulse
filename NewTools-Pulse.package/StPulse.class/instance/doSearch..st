@@ -1,4 +1,4 @@
-private
+private - actions
 doSearch: aString
 	
 	self owner 
@@ -6,7 +6,6 @@ doSearch: aString
 	numCandidatesAdded := 0.
 	self searchWorker purge.
 	self searchWorker schedule: [ 
-		self showSpinner.
 		candidatesFullSearchList := self model 
 			candidatesFor: aString 
 			inContext: self selectedContext ] 

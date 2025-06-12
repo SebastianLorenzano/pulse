@@ -9,9 +9,10 @@ updateResultListWith: aCollection
 					aCollection isEmpty 
 					and: [ searchPresenter text isEmpty 
 					and: self selectedContext = environmentContext ] )
-		 	 	 		ifTrue: [ self historyEntries ]
+		 	 	 		ifTrue: [ 	
+								self hideSpinner. 
+								self historyEntries ]
 						ifFalse: [ aCollection ].
-				self hideSpinner.
 				list emit.
 				emptyPresenter visible: list isEmpty.
 				listPresenter disableActivationDuring: [ 

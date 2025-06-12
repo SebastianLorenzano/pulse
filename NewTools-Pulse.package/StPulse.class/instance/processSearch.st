@@ -1,4 +1,4 @@
-private
+private - service
 processSearch
 
 	spinner isVisible ifTrue: [ spinner updateStep ].
@@ -10,6 +10,6 @@ processSearch
 				ifNil: [ self processAddedCandidates ]
 				ifNotNil: [ self processFullAddedCandidates ] ]
 		ifFalse: [ 
-			spinner reset.
+			self showSpinner.
 			lastSearchText := waitingSearchText.
 			self doSearch: waitingSearchText ].
