@@ -1,4 +1,4 @@
-private
+private - actions
 doSearchOutsideOfService
 
 	lastSearchText := searchPresenter text. 

@@ -1,4 +1,4 @@
-private
+private - service
 ensurePulseService
 		
 	service ifNotNil: [ 
