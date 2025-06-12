@@ -1,5 +1,4 @@
 instance creation
 openWithTextOnEnvironment: aText
 
-	self initialPageIndex: 1.
-	^ self openWithText: aText
+	^ self openWithText: aText page: 1
