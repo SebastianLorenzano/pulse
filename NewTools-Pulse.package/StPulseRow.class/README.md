@@ -1,0 +1,1 @@
+Row presenter for StPulse list presenter.
