@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "2025-06-12T15:00:23.261+02:00",
+	"commentStamp" : "",
 	"super" : "SpEasyAbstractRowPresenter",
 	"category" : "NewTools-Pulse-View",
 	"classinstvars" : [ ],
@@ -10,6 +10,6 @@
 		"namePresenter",
 		"contextPresenter"
 	],
-	"name" : "StPulseRow",
+	"name" : "StPulseRowPresenter",
 	"type" : "normal"
 }

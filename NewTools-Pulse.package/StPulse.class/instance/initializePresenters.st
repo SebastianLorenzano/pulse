@@ -26,5 +26,5 @@ initializePresenters
 	
 	listPresenter := self newEasyListView
 		addStyle: 'stPulseList';
-		rowPresenterClass: StPulseRow;
+		rowPresenterClass: StPulseRowPresenter;
 		yourself
