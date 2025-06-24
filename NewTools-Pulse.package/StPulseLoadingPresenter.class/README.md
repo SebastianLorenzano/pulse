@@ -1,0 +1,1 @@
+This is the loading widget that appears when a search is in process. It will only disappear when the full search has been completed
