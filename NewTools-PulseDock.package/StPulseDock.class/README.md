@@ -1,0 +1,1 @@
+StPulse implementation for DockBrowser
