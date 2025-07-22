@@ -24,18 +24,17 @@ styleSheetContribution
 		Container { #borderWidth: 0 } ],	
 	.stPulseRowText [ ],
 	.stPulseButton [ 
-		Geometry { #height: 150}, 
 		Draw { #backgroundColor: EnvironmentColor(#background), #color: EnvironmentColor(#background) },
 		Container { #borderWidth: 0 } ],
 	.stPulseHelp [  
-		Geometry { #height: 250, #width: 380 },
+		Geometry { #height: 308, #width: 380 },
 		Draw { #backgroundColor: EnvironmentColor(#background), #color: EnvironmentColor(#background) } ],
+	.stPulseInvisibleLabel [ 
+		Geometry { #width: 150 } ],
 	.stPulseToolbar [ 
-		Geometry { #height: 10, #width: 10 } ],
+		Geometry { #height: 50, #width: 50 } ],
 	.stPulseSpinner [ 
-		Geometry { #height: 10, #width: 10 } ],
-	.stPulseLoadingSpinner [ 
-		Geometry { #minHeight: 40, #height: 40 } ],
+		Geometry { #height: 40, #width: 150 } ],
 	.stPulsePaginator [ 
 		Geometry { #height: 22 } ],
 	.stPulsePaginatorLayout [ 

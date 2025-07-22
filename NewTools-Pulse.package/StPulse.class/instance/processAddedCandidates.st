@@ -8,4 +8,3 @@ processAddedCandidates
 	candidates := candidatesAddedList asArray.
 	candidatesAddedList removeAll.
 	self updateResultListWith: candidates
-	

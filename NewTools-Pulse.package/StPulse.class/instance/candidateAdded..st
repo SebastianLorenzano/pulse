@@ -6,4 +6,3 @@ candidateAdded: aCandidate
 			ifTrue: [ ^ self ]. 
 		numCandidatesAdded := numCandidatesAdded + 1.
 		candidatesAddedList add: aCandidate ]
-	 

@@ -19,12 +19,12 @@ addKeyboardBehavior: aPresenter
 			action: [ self giveFocusToNextResultList ] ];
 		addShortcutWith: [ :action | action 
 			shortcutKey: KeyboardKey left asKeyCombination actionModifier;
-			action: [ self giveFocusToPreviousResultList ] ].
+			action: [ self giveFocusToPreviousResultList ] ];
+		addShortcutWith: [ :action | action 
+			shortcutKey: KeyboardKey down asKeyCombination actionModifier;
+			action: [ self findAllButtonAction ] ].
 	
 	aPresenter eventHandler whenKeyDownDo: [ :anEvent | 
-			"28 = Left Arrow | 29 = Right Arrow | 30 = Arrow up | 31 = Arrow down"
-			(#(28 29 30 31) includes: anEvent keyValue )
+			"0 = Left Control | 28 = Left Arrow | 29 = Right Arrow | 30 = Arrow up | 31 = Arrow down"
+			(#(0 28 29 30 31) includes: anEvent keyValue )
 				ifFalse:  [ searchPresenter takeKeyboardFocus ] ]
-
-
-	

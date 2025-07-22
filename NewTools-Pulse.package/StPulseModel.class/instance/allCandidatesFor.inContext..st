@@ -1,5 +1,5 @@
 private
-candidatesFor: text inContext: aDockSpotterContext
+allCandidatesFor: text inContext: aDockSpotterContext
 	"contextSymbol can be #environment, #editors, #tools"
 	| candidateList stream context processor |
 	
@@ -19,5 +19,5 @@ candidatesFor: text inContext: aDockSpotterContext
 
 	(self processorsForContext: aDockSpotterContext) do: [ :each |
 		processor := each new.
-		processor filterInContext: context ].
+		processor filterAllInContext: context ].
 	^ candidateList candidates asArray

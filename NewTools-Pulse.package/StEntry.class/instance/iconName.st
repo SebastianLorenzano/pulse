@@ -1,4 +1,0 @@
-accessing
-iconName
-	
-	^ self subclassResponsibility

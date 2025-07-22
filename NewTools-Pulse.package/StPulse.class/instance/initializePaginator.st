@@ -9,4 +9,4 @@ initializePaginator
 
 	self addToPaginator: self environmentContext.
 	self addToPaginator: self windowsContext.
-	self addToPaginator: self toolsContext.
+	self addToPaginator: self toolsContext

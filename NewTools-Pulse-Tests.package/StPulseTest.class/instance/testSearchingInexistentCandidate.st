@@ -1,8 +1,7 @@
 running
 testSearchingInexistentCandidate
 
-	| window candidates |	
-
+	| window candidates |
 	[ 
 		window := pulse open.
 		candidates := pulse model candidatesFor: 'ClassThatDoesntExist' inContext: pulse environmentContext.

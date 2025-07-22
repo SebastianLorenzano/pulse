@@ -7,5 +7,5 @@ initialize
 			yourself).
 	super initialize.
 	numCandidatesAdded := 0.
-	candidatesAddedList := OrderedCollection new
-	
+	candidatesAddedList := OrderedCollection new.
+	doFullSearchNext := false

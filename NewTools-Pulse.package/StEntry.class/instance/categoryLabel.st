@@ -1,4 +1,0 @@
-accessing
-categoryLabel
-
-	^ self subclassResponsibility

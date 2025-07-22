@@ -1,7 +1,7 @@
 layout
 defaultLayout
     | contentsLayout result |
-
+	"Spinner should always be added after findAllButtonLayout or the invisible presenter findAllButtonLayout uses will cover spinner"
 	result := SpOverlayLayout new
 		addOverlay: spinner withConstraints: [ :c | c vAlignEnd; hAlignStart ];
 		addOverlay: buttonsToolbar withConstraints: [ :c | c vAlignEnd ; hAlignEnd ];
@@ -10,7 +10,7 @@ defaultLayout
 			add: searchPresenter expand: false;
 			add: (contentsLayout := SpBoxLayout newLeftToRight
 				add: (SpBoxLayout newTopToBottom
-					add: listLabelPresenter expand: false;
+					add: listTitleLayout expand: false;
 					add: listPresenter;
 					yourself);
 				yourself);

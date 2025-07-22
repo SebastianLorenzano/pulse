@@ -1,1 +1,0 @@
-I wrap a CompiledMethod, to modify its behavior if required for the class

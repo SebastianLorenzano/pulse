@@ -1,11 +1,10 @@
 private - actions
-doSearch: aString
+doFullSearch: aString
 	
 	self owner 
 		ifNil: [ ^ self ].
-	numCandidatesAdded := 0.
 	self searchWorker purge.
 	self searchWorker schedule: [ 
 		candidatesFullSearchList := self model 
-			candidatesFor: aString 
+			allCandidatesFor: aString 
 			inContext: self selectedContext ]

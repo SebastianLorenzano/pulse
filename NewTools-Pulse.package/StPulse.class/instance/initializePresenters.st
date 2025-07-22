@@ -2,10 +2,15 @@ initialization
 initializePresenters
 
 	self addStyle: 'stPulse'.
-
 	self initializePaginator.
 	self initializeButtons.
-
+	self initializeListLabel.
+	
+	spinner := (self instantiate: StPulseLoadingPresenter)
+		addStyle: 'stPulseSpinner';
+		yourself.
+	spinner hide.
+	
 	emptyPresenter := self newLabel 
 		label: 'No results yet...';
 		visible: false;
@@ -15,15 +20,6 @@ initializePresenters
 		addStyle: 'stPulseSearch';
 		yourself.
 
-	spinner := (self instantiate: StPulseLoadingPresenter)
-		addStyle: 'stPulseSpinner';
-		yourself.
-	spinner hide.
-
-	listLabelPresenter := self newLabel
-		addStyle: 'stPulseLabel';
-		yourself.
-	
 	listPresenter := self newEasyListView
 		addStyle: 'stPulseList';
 		rowPresenterClass: StPulseRowPresenter;
