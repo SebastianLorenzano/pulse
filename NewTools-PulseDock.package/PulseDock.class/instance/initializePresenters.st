@@ -1,0 +1,5 @@
+initialization
+initializePresenters
+
+	super initializePresenters.
+	listPresenter rowPresenterClass: PulseRowPresenterDock

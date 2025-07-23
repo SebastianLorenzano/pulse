@@ -1,0 +1,1 @@
+StPulseRowPresenter implementation for DockBrowser

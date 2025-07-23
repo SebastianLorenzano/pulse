@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "2025-07-23T11:49:01.704954+02:00",
+	"super" : "StPulseRowPresenter",
+	"category" : "NewTools-PulseDock",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PulseRowPresenterDock",
+	"type" : "normal"
+}
