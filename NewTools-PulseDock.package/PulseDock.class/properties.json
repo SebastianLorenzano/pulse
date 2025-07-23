@@ -2,7 +2,7 @@
 	"classtraitcomposition" : "DockTNotificationCenter classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "StPulseDock",
+	"name" : "PulseDock",
 	"commentStamp" : "2025-07-22T15:09:36.758056+02:00",
 	"super" : "StPulse",
 	"traitcomposition" : "DockTNotificationCenter",
