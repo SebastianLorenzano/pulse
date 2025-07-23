@@ -6,6 +6,5 @@ showPreview: aPresenter
 	aPresenter spotterPreview ifNotNil: [ :previewPresenter |
 		self addKeyboardBehavior: previewPresenter. 
 		previewContainer add: (previewPresenter
-			addStyle: 'stPulsePreview' ;
 			owner: self;
 			yourself) ] 

@@ -33,7 +33,8 @@
 		"candidatesFullSearchList",
 		"doFullSearchNext",
 		"helpButton",
-		"settingsButton"
+		"settingsButton",
+		"helpPresenter"
 	],
 	"name" : "StPulse",
 	"commentStamp" : "",

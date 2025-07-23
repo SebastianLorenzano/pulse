@@ -18,5 +18,5 @@ addStyles
 		addStyle: 'stPulseButton'.
 		
 	listLabelPresenter addStyle: 'stPulseLabel'.
-	listCounterPresenter addStyle: 'dim'
-	
+	listCounterPresenter addStyle: 'dim'.
+	helpPresenter addStyle: 'stPulseHelp'	

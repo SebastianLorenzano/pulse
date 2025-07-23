@@ -15,14 +15,11 @@ styleSheetContribution
 		Container { #intercellSpacing: 1, #rowHeight: 26  },
 		Draw { #color: #transparent },
 		Geometry { #hResizing: false } ],
-	.stPulsePreview [ 
-		Draw { #color: #transparent } ],
 	.stPulseLabel [ 
 		Geometry { #height: 25},
 		Font { #size: 11, #name: EnvironmentFont(#default) } ],
 	.stPulseRow [  
 		Container { #borderWidth: 0 } ],	
-	.stPulseRowText [ ],
 	.stPulseButton [ 
 		Draw { #backgroundColor: EnvironmentColor(#background), #color: EnvironmentColor(#background) },
 		Container { #borderWidth: 0 } ],
