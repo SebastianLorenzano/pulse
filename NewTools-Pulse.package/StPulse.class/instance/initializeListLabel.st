@@ -1,14 +1,8 @@
 initialization
 initializeListLabel
 
-	listLabelPresenter := self newLabel
-		addStyle: 'stPulseLabel';
-		yourself.
-		
-	listCounterPresenter := self newLabel
-		addStyle: 'dim';
-		yourself.
-	
+	listLabelPresenter := self newLabel.
+	listCounterPresenter := self newLabel.
 	listTitleLayout := self newPresenter
 		layout: (SpBoxLayout newLeftToRight 
 			add: listLabelPresenter expand: true;

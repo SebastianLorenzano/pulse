@@ -1,26 +1,18 @@
 initialization
 initializeButtons
 
-	| helpButton settingsButton |
-
 	findAllButton := self newButton
-		addStyle: 'small';
-		addStyle: 'stPulseButton';
 		icon: (self iconNamed: #glamorousDown);
 		action: [ self findAllButtonAction ];
 		help: 'Gives you all the results of a search. Normal searchs only give you the first 25';
 		yourself.
 
 	helpButton := self newButton
-		addStyle: 'small';
-		addStyle: 'stPulseButton';
 		icon: (self iconNamed: #help);
 		action: [ self showPopover: helpButton ];
 		help: 'Open popover with tips for StPulse'.
 
 	settingsButton := self newButton
-		addStyle: 'small';
-		addStyle: 'stPulseButton';
 		icon: (self application iconNamed: #configuration);
 		action: [ 
 			self defaultKeyboardFocus takeKeyboardFocus.

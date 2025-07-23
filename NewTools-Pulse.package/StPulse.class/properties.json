@@ -31,7 +31,9 @@
 		"numCandidatesAdded",
 		"candidatesAddedList",
 		"candidatesFullSearchList",
-		"doFullSearchNext"
+		"doFullSearchNext",
+		"helpButton",
+		"settingsButton"
 	],
 	"name" : "StPulse",
 	"commentStamp" : "",
