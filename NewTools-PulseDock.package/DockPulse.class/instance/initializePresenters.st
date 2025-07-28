@@ -12,9 +12,9 @@ initializePresenters
 		visible: false;
 		yourself.
 	searchPresenter := self newSearchInput.
-	listPresenter := self newEasyListView
-		rowPresenterClass: StPulseRowPresenter;
-		yourself.
+	resultListPresenter := self newResultList.
+	editorListPresenter := self newResultList.
+	toolListPresenter := self newResultList.
 	helpPresenter := (SpPresenter new
 			layout: (SpGridLayout new
 				beColumnNotHomogeneous;
