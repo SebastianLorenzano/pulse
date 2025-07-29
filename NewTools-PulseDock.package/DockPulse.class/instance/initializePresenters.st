@@ -1,7 +1,7 @@
 initialization
 initializePresenters
 
-	self initializePaginator.
+	"self initializePaginator."
 	self initializeButtons.
 	self initializeListLabel.
 	spinner := (self instantiate: StPulseLoadingPresenter).

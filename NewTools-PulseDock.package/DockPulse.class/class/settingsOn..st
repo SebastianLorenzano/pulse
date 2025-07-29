@@ -1,6 +1,6 @@
 settings
 settingsOn: aBuilder
-<systemsettings>
+"<systemsettings>
 
 	(aBuilder group: #pulse)
 		parent: #tools;
@@ -33,4 +33,4 @@ settingsOn: aBuilder
 		parent: #pulse;
 		description: 'Resets the stored size of Pulse, which can be changed at any time and will be remembered';
 		label: 'Reset size';
-		buttonLabel: 'Reset'
+		buttonLabel: 'Reset'"

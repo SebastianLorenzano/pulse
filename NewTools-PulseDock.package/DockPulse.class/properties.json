@@ -45,7 +45,9 @@
 	"super" : "SpPresenter",
 	"traitcomposition" : "SpTModel + DockTNotificationCenter",
 	"type" : "normal",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"pulse"
+	],
 	"pools" : [ ],
 	"category" : "NewTools-PulseDock"
 }
