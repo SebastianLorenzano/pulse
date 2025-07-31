@@ -73,7 +73,10 @@ Multiple shortcuts allow you to open **Pulse directly into a specific tab**, enh
 
 Pulse development was divided into this repository and contributions to related projects:
 
-### 🔁 Contributions to [NewTools](https://github.com/pharo-spec/NewTools)
+### Contributions to this repository:
+- https://github.com/SebastianLorenzano/pulse/commits/main/
+
+### Contributions to [NewTools](https://github.com/pharo-spec/NewTools)
 
 - [Small fix on NewTools-Spotter-Processors → `StQuery >> updateFromContext:`](https://github.com/pharo-spec/NewTools/pull/1146)
 - [Add `stpulse`](https://github.com/pharo-spec/NewTools/pull/1164)
@@ -82,7 +85,7 @@ Pulse development was divided into this repository and contributions to related 
 - [Fixing focus bug on `stpulse` and tests](https://github.com/pharo-spec/NewTools/pull/1200)
 - [Implement `stpulse` "Find All" button](https://github.com/pharo-spec/NewTools/pull/1201)
 
-### 🧩 Contributions to [Spec](https://github.com/pharo-spec/Spec)
+### Contributions to [Spec](https://github.com/pharo-spec/Spec)
 
 - [Add styling for lists (morphic backend)](https://github.com/pharo-spec/Spec/pull/1775)
 - [Announce `willClose` and support resizing in modals](https://github.com/pharo-spec/Spec/pull/1776)
