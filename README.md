@@ -8,6 +8,20 @@ When exploring the system, it's useful to have a single entry point to search ac
 
 Pulse is a **remake of Spotter**, a front-end tool for displaying results from various processors. These processors can be configured in different ways to provide flexible access options.
 
+<p align="center">
+  <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/9005ade7-d8e1-4afc-a5b4-3c8722faad9d" />
+</p>
+
+<p align="center">
+  <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/0b9f948a-8fa7-4cdb-b51a-4538f56dc420" />
+</p>
+
+<p align="center">
+  <img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/7f0c1fe2-25a3-4999-aab4-c7bd779ba0fe" />
+</p>
+
+
+
 ---
 
 ## Interface Tabs
@@ -22,19 +36,19 @@ Pulse splits the traditional Spotter interface into three distinct tabs:
 
 ## Search Behavior
 
-- Pulse fetches the **first 25 results**, but loads the **first 3 results immediately** via events to improve responsiveness.
-- You can request the full results by using the **down arrow** or `<Meta + ↓>`.
+- Pulse fetches the first 25 results, but loads the first 3 results immediately via events to improve responsiveness.
+- You can request the full results by using the down arrow button or `<Meta + ↓>`.
 - A background service runs every **50 milliseconds** to manage the search behavior asynchronously.
   - Logic handled in: `StPulse >> processSearch`
 - When typing, the service triggers the search.
 - When changing tabs, a separate search is executed outside the service.
-- A **spinner** gives visual feedback during searches.
+- A spinner gives visual feedback during searches.
 
 ---
 
 ## History Entries
 
-Any class, method, or package you open (from the **Environment** tab) is stored as a `HistoryEntry`:
+Any class, method, or package you open (from the Environment tab) is stored as a `HistoryEntry`:
 
 - **Classes/Methods** → contents serialized as a string  
 - **Packages** → stores the package name and re-queries on retrieval  
@@ -45,9 +59,9 @@ This avoids hard references and all entries are stored in a **circular memory lo
 
 ## Keyboard Navigation
 
-Keyboard shortcuts are available at both the **window level** and **individual presenters** for full mouse-free navigation.
+Keyboard shortcuts are available at both the window level and individual presenters for full mouse-free navigation.
 
-Multiple shortcuts allow you to open **Pulse directly into a specific tab**, enhancing speed and usability.
+Multiple shortcuts allow you to open Pulse directly into a specific tab, enhancing speed and usability.
 
 ---
 
@@ -61,11 +75,11 @@ Multiple shortcuts allow you to open **Pulse directly into a specific tab**, enh
 
 ## Processors & Shortcuts
 
-| Processor      | Search Keyword   | Shortcut     |
-|----------------|------------------|--------------|
-| **Classes**    | `#classes`       | `<Meta+B>`   |
-| **Implementors** | `#implementors` | `<Meta+M>`   |
-| **Packages**   | `#packages`      | `<Meta+P>`   |
+| Processor        | Search Keyword    | Shortcut      |
+|------------------|-------------------|---------------|
+| **Classes**      | `#classes`        | `<Meta+B>`    |
+| **Implementors** | `#implementors`   | `<Meta+M>`    |
+| **Packages**     | `#packages`       | `<Meta+P>`    |
 
 ---
 
