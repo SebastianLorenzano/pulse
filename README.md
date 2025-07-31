@@ -86,7 +86,7 @@ Multiple shortcuts allow you to open Pulse directly into a specific tab, enhanci
 ## Development & Contributions
 
 Pulse development was divided into this repository and contributions to related projects:
-
+(At the moment, I'm developing DockPulse, an adaptation for another IDE)
 ### Contributions to this repository:
 - https://github.com/SebastianLorenzano/pulse/commits/main/
 
