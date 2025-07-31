@@ -1,2 +1,90 @@
-# pulse
-This repository was made to be able to play more comfortably with Pulse, a new NewTools Spotter for Pharo
+# Pulse
+
+> 💡 Most of the information is available in the **help icon** when you open the tool.
+
+## Overview
+
+When exploring the system, it's useful to have a single entry point to search across different components. **Pulse** provides such an entry point and is usually available by pressing `<Meta+Enter>`.
+
+Pulse is a **remake of Spotter**, a front-end tool for displaying results from various processors. These processors can be configured in different ways to provide flexible access options.
+
+---
+
+## Interface Tabs
+
+Pulse splits the traditional Spotter interface into three distinct tabs:
+
+- **Environment** — for classes, methods, and packages  
+- **Windows** — for every open window in the image  
+- **Tools** — for menu items  
+
+---
+
+## Search Behavior
+
+- Pulse fetches the **first 25 results**, but loads the **first 3 results immediately** via events to improve responsiveness.
+- You can request the full results by using the **down arrow** or `<Meta + ↓>`.
+- A background service runs every **50 milliseconds** to manage the search behavior asynchronously.
+  - Logic handled in: `StPulse >> processSearch`
+- When typing, the service triggers the search.
+- When changing tabs, a separate search is executed outside the service.
+- A **spinner** gives visual feedback during searches.
+
+---
+
+## History Entries
+
+Any class, method, or package you open (from the **Environment** tab) is stored as a `HistoryEntry`:
+
+- **Classes/Methods** → contents serialized as a string  
+- **Packages** → stores the package name and re-queries on retrieval  
+
+This avoids hard references and all entries are stored in a **circular memory logger**, which auto-cleans any `nil` or invalid entries.
+
+---
+
+## Keyboard Navigation
+
+Keyboard shortcuts are available at both the **window level** and **individual presenters** for full mouse-free navigation.
+
+Multiple shortcuts allow you to open **Pulse directly into a specific tab**, enhancing speed and usability.
+
+---
+
+## UI Features
+
+- Designed to work with **Pharo's new memory of window size**.
+- Special handling was implemented for **modal resizing**, requiring Spec-level customization.
+- New Spec styles were added to lists (e.g., `rowHeight`) to support this tool.
+
+---
+
+## Processors & Shortcuts
+
+| Processor      | Search Keyword   | Shortcut     |
+|----------------|------------------|--------------|
+| **Classes**    | `#classes`       | `<Meta+B>`   |
+| **Implementors** | `#implementors` | `<Meta+M>`   |
+| **Packages**   | `#packages`      | `<Meta+P>`   |
+
+---
+
+## Development & Contributions
+
+Pulse development was divided into this repository and contributions to related projects:
+
+### 🔁 Contributions to [NewTools](https://github.com/pharo-spec/NewTools)
+
+- [Small fix on NewTools-Spotter-Processors → `StQuery >> updateFromContext:`](https://github.com/pharo-spec/NewTools/pull/1146)
+- [Add `stpulse`](https://github.com/pharo-spec/NewTools/pull/1164)
+- [Fixing NewTools baseline](https://github.com/pharo-spec/NewTools/pull/1181)
+- [Reverted deleted `stEntry` methods](https://github.com/pharo-spec/NewTools/pull/1188)
+- [Fixing focus bug on `stpulse` and tests](https://github.com/pharo-spec/NewTools/pull/1200)
+- [Implement `stpulse` "Find All" button](https://github.com/pharo-spec/NewTools/pull/1201)
+
+### 🧩 Contributions to [Spec](https://github.com/pharo-spec/Spec)
+
+- [Add styling for lists (morphic backend)](https://github.com/pharo-spec/Spec/pull/1775)
+- [Announce `willClose` and support resizing in modals](https://github.com/pharo-spec/Spec/pull/1776)
+- [Added `disableActivationDuring` to `SpAbstractEasypresenter`](https://github.com/pharo-spec/Spec/pull/1778)
+- [Fixing `SpSearchInputFieldPresenter` not appearing](https://github.com/pharo-spec/Spec/pull/1796)
